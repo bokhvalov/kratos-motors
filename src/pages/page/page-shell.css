@@ -1,0 +1,42 @@
+.page-container {
+  width: 100%;
+  max-width: var(--layout-frame-max);
+  margin: 0 auto;
+  padding: 0 var(--section-px) var(--space-xl);
+  box-sizing: border-box;
+}
+
+/* About mobile: tighter bottom padding under breadcrumb */
+@media (max-width: 744px) {
+  .page-container.about-page {
+    padding-bottom: 0;
+  }
+
+  .page-container.about-page .breadcrumb {
+    margin-bottom: 0;
+  }
+
+  .page-container.about-page .breadcrumb ol {
+    min-height: 0;
+  }
+}
+
+/* Page title */
+.page-title.ui-heading {
+  margin: 0 0 var(--space-lg);
+}
+
+.page-content {
+  color: var(--color-text-muted);
+  font-size: var(--text-body);
+  line-height: 1.6;
+  max-width: 65ch;
+}
+
+.page-content p {
+  margin: 0 0 var(--space-md);
+}
+
+.page-intro {
+  margin-bottom: var(--space-xl);
+}

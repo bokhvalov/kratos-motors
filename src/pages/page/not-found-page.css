@@ -1,0 +1,155 @@
+/* Not found (404) page */
+
+.not-found-page {
+  position: relative;
+  width: 100%;
+  /* Same as site background to avoid bright gaps at edges */
+  background: var(--color-bg);
+  box-sizing: border-box;
+  overflow-x: clip;
+}
+
+/* Fills viewport below the header; foreground sits over the photo */
+.not-found-page__hero {
+  position: relative;
+  width: 100%;
+  min-height: calc(100dvh - var(--site-header-height));
+  overflow: hidden;
+}
+
+.not-found-page__visual {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  --404-photo-zoom: 1.2;
+}
+
+/* Cover the hero fully; overflow is clipped */
+.not-found-page__photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: 50% 44%;
+  transform: scale(var(--404-photo-zoom));
+  transform-origin: 50% 80%;
+}
+
+/* Centered column, anchored high on the hero */
+.not-found-page__column {
+  --404-side: var(--section-px);
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem; /* 32px: wordmark to card */
+  width: min(32.5rem, calc(100% - 2 * var(--404-side)));
+  max-width: 100%;
+  margin: 270px auto 0;
+  padding: clamp(0.25rem, 2vh, 1.25rem) var(--404-side) var(--space-2xl);
+  box-sizing: border-box;
+}
+
+.not-found-page__heading-wrap {
+  width: 100%;
+  max-width: 27.82rem; /* ~445px */
+  display: flex;
+  justify-content: center;
+}
+
+/* Allow SVG glow to extend past the wrapper */
+.not-found-page__heading-graphic {
+  width: 100%;
+  max-width: 29.82rem;
+  height: auto;
+  display: block;
+}
+
+.not-found-page__card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem; /* 24px */
+  padding: var(--space-xl) var(--space-xl);
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.48);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  text-align: center;
+  color: #ffffff;
+  font-family: var(--font-body);
+}
+
+.not-found-page__card-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; /* 16px: headline to subhead */
+  width: 100%;
+}
+
+.not-found-page__exclaim {
+  margin: 0;
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.2;
+  width: 100%;
+}
+
+.not-found-page__lead {
+  margin: 0;
+  font-size: clamp(1.125rem, 3.2vw, 1.5rem);
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.5;
+  width: 100%;
+}
+
+.not-found-page__body {
+  margin: 0;
+  font-size: var(--text-body);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.5;
+  max-width: 36ch;
+}
+
+.not-found-page__card .ui-btn {
+  flex-shrink: 0;
+}
+
+/* Tablet / narrow: wider side inset so content does not touch edges */
+@media (max-width: 1024px) and (min-width: 395px) {
+  .not-found-page__column {
+    --404-side: max(var(--section-px), clamp(1.75rem, 7.5vw, 10rem));
+  }
+}
+
+@media (max-width: 1024px) {
+  .not-found-page__card {
+    padding: var(--space-xl) clamp(1.25rem, 5vw, 2.5rem);
+  }
+}
+
+@media (max-width: 885px) {
+  .not-found-page__visual {
+    --404-photo-zoom: 1.35;
+  }
+
+  .not-found-page__column {
+    gap: 1.5rem;
+    padding-top: 0rem;
+  }
+
+  .not-found-page__heading-graphic {
+    max-width: 370px;
+  }
+
+  .not-found-page__card {
+    padding: var(--space-lg) clamp(1.125rem, 4.5vw, 1.75rem);
+    gap: var(--space-md);
+  }
+}

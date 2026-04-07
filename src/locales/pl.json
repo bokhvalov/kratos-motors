@@ -1,0 +1,304 @@
+{
+  "nav": {
+    "home": "Strona główna",
+    "services": "Usługi",
+    "about": "O nas",
+    "sportsCarBuilds": "Budowa aut sportowych",
+    "portfolio": "Portfolio",
+    "privacy": "Polityka prywatności",
+    "brands": {
+      "audi": "Audi",
+      "bmw": "BMW",
+      "mercedes": "Mercedes",
+      "porsche": "Porsche",
+      "volkswagen": "Volkswagen",
+      "ford": "Ford"
+    }
+  },
+  "a11y": {
+    "skipToContent": "Przejdź do treści",
+    "mainNav": "Główna nawigacja",
+    "footerNav": "Nawigacja w stopce",
+    "openMenu": "Otwórz menu",
+    "closeMenu": "Zamknij menu",
+    "close": "Zamknij"
+  },
+  "header": {
+    "chooseLanguage": "Wybierz język",
+    "languageListLabel": "Język strony",
+    "cta": "Umów wizytę",
+    "phone": "+48 516 520 380",
+    "topBarLabel": "Kontakt i social media",
+    "socialTelegram": "Kratos Motors na Telegramie",
+    "socialInstagram": "Kratos Motors na Instagramie",
+    "socialWhatsapp": "Napisz do nas na WhatsApp",
+    "address": "Polska, Przedświt 10, Wrocław",
+    "phoneLinkLabel": "Zadzwoń do Kratos Motors"
+  },
+  "footer": {
+    "addressLabel": "Adres punktu:",
+    "phoneLabel": "Numer telefonu:",
+    "address": "Polska, Przedświt 10, Wrocław",
+    "phone": "+48 516 520 380",
+    "hours": "Godziny otwarcia:",
+    "hoursValue": "Pn-Pt: 09:00–17:00",
+    "hoursWeekend": "Sb-Nd: Zamknięte",
+    "route": "Wyznacz trasę",
+    "socialHeading": "Media społecznościowe i komunikatory:",
+    "mapIframeTitle": "Mapa — lokalizacja Kratos Motors",
+    "mapCardAria": "Adres na mapie",
+    "mapCardTitle": "Przedświt 10",
+    "mapCardLine1": "Przedświt 10, 54-618",
+    "mapCardLine2": "Wrocław, Polska",
+    "mapEnlarge": "Powiększ mapę",
+    "mapDirections": "Dojazd",
+    "logoAria": "Kratos Motors — strona główna",
+    "privacyLink": "Polityka prywatności",
+    "copyrightLine": "Kratos motors © {{year}}"
+  },
+  "home": {
+    "title": "KRATOS MOTORS",
+    "serwisPremium": "serwis premium",
+    "subtitle": "Serwis i tuning samochodów | Wrocław",
+    "metaTitle": "Kratos Motors — Serwis i tuning samochodów | Wrocław",
+    "metaDescription": "Kratos Motors Wrocław — serwis, diagnostyka i tuning. Audi, BMW, Mercedes, Porsche, Volkswagen, Ford. Umów wizytę.",
+    "heroDescription": "Alternatywa premium dla ASO. Szybciej, przejrzyściej i z jubilerską precyzją. Zapewniamy ekspercką opiekę nad każdym detalem, gwarantując bezawaryjność i Twój pełny komfort.",
+    "servicesHeading": "Usługi",
+    "portfolioHeading": "Portfolio",
+    "tz": {
+      "mechanika": "MECHANIKA I SKRZYNIE",
+      "podwozie": "PODWOZIE",
+      "tuning": "TUNING",
+      "kola": "KOŁA"
+    },
+    "ctaStripText": "Oferujemy precyzyjną diagnostykę, zaawansowany tuning i serwis, który wyznacza nowe standardy.",
+    "aboutHeading": "O projekcie",
+    "aboutBrand": "Kratos Motors",
+    "aboutP1": "Kratos Motors to miejsce, w którym profesjonalizm spotyka się z zaufaniem. Specjalizujemy się w zaawansowanej mechanice, tuningu i serwisie aut premium, stając się rzetelną alternatywą dla autoryzowanych serwisów.",
+    "aboutP2": "Działamy w pełni transparentnie, dając Ci pewność, że Twój samochód jest zawsze w bezpiecznych rękach.",
+    "whyTrustHeading": "Dlaczego nam",
+    "whyTrustWord": "ufają",
+    "whyTrustSubtitle": "Stawiamy na pełną transparentność i najwyższą jakość obsługi Twojego samochodu",
+    "whyTrust01": "Standardy ASO w uczciwej cenie bez wysokich marż dealerskich",
+    "whyTrust02": "Przejrzyste koszty bez ukrytych opłat przed naprawą auta",
+    "whyTrust03": "Precyzyjna diagnostyka i szybka lokalizacja każdej usterki",
+    "whyTrust04": "Gwarancja jakości oraz montaż sprawdzonych części zamiennych",
+    "formHeading": "Zostaw zgłoszenie",
+    "formHeadingMuted": "a skontaktujemy się z Tobą",
+    "formNamePlaceholder": "Twoje imię",
+    "formPhonePlaceholder": "Numer telefonu",
+    "formVinPlaceholder": "Numer VIN",
+    "formServicePlaceholder": "Usługa",
+    "formServicesList": [
+      "Diagnostyka silnika",
+      "Wymiana oleju",
+      "Wymiana filtrów",
+      "Skrzynia biegów",
+      "Układ Jezdny",
+      "Układ wydechowy",
+      "Układ hamulcowy",
+      "Wymiana wahacza prostego",
+      "Wymiana tulei wahacza",
+      "Wymiana filtra kabinowego"
+    ],
+    "formCta": "Uzyskaj priorytetową konsultację",
+    "realizationsHeading": "Nasze Realizacje",
+    "realizationEnlarge": "Powiększ zdjęcie",
+    "realizationLightboxLabel": "Powiększone zdjęcie realizacji",
+    "finalCtaText": "Oferujemy precyzyjną diagnostykę, zaawansowany tuning i serwis, który wyznacza nowe standardy."
+  },
+  "breadcrumb": {
+    "home": "Strona główna"
+  },
+  "pages": {
+    "about": {
+      "title": "O nas",
+      "metaTitle": "Kratos Motors — O nas | Wrocław",
+      "metaDescription": "Kratos Motors — warsztat samochodowy we Wrocławiu. Serwis, diagnostyka i tuning premium. Doświadczony zespół, marki Audi, BMW, Mercedes, Porsche i inne."
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "metaTitle": "Kratos Motors — Portfolio | Wrocław",
+      "metaDescription": "Portfolio Kratos Motors we Wrocławiu — zrealizowane projekty serwisowe, tuning i naprawy aut premium.",
+      "intro": "Zrealizowane projekty i naprawy w naszym warsztacie.",
+      "showMore": "Pokaż więcej",
+      "showLess": "Pokaż mniej"
+    },
+    "services": {
+      "title": "Usługi",
+      "metaTitle": "Kratos Motors — Usługi | Wrocław",
+      "metaDescription": "Obsługa techniczna, naprawy główne i usługi dodatkowe Kratos Motors we Wrocławiu — diagnostyka, oleje, skrzynia, układ jezdny, wydech, hamulce i więcej.",
+      "details": "Szczegóły",
+      "ctaBody": "Oferujemy precyzyjną diagnostykę, zaawansowany tuning oraz serwis, który stawia nowe standardy.",
+      "sections": {
+        "technical": "Obsługa techniczna / Diagnostyka",
+        "main": "Naprawy główne",
+        "additional": "Usługi dodatkowe"
+      },
+      "items": {
+        "engineDiagnostics": "Diagnostyka silnika",
+        "oilChange": "Wymiana oleju",
+        "filterChange": "Wymiana filtrów",
+        "oilBmw": "Wymiana oleju BMW",
+        "oilMercedes": "Mercedes-Benz",
+        "oilPorsche": "Porsche",
+        "gearbox": "Skrzynia biegów",
+        "chassis": "Układ jezdny",
+        "exhaust": "Układ wydechowy",
+        "brakes": "Układ hamulcowy",
+        "shocks": "Wymiana amortyzatora",
+        "controlArm": "Wymiana wahacza prostego",
+        "bushing": "Wymiana tulei wahacza",
+        "cabinFilter": "Wymiana filtra kabinowego"
+      }
+    },
+    "sportsCarBuilds": {
+      "title": "Budowa aut sportowych",
+      "metaTitle": "Kratos Motors — Budowa aut sportowych | Wrocław",
+      "metaDescription": "Budowa aut sportowych i przygotowanie do driftu — Kratos Motors Wrocław. SWAP silników, klatki, zawieszenie, ECU.",
+      "heroTitleDesktop": "Budujemy bestie na tor i na ulicę.",
+      "heroLeadDesktop": "Kompleksowe przygotowanie do driftu: od „gołej” budy aż po podium",
+      "heroTitleTabletLine1": "Kratos Motors",
+      "heroTitleTabletLine2": "serwis premium",
+      "heroLeadTablet": "Alternatywa premium dla ASO. Szybciej, przejrzyściej i z jubilerską precyzją. Zapewniamy ekspercką opiekę nad każdym detalem, gwarantując bezawaryjność i Twój pełny komfort.",
+      "sectionCoRobimy": "Co robimy?",
+      "coRobimyItems": [
+        "SWAP silników",
+        "Budowa klatek bezpieczeństwa",
+        "Modyfikacja zawieszenia i układu skrętu",
+        "Odchudzanie nadwozia",
+        "Elektryka i strojenie ECU"
+      ],
+      "sectionDrift": "Modyfikacje do driftu",
+      "driftBody": "Drift to nie tylko sport, to inżynieryjna sztuka. Wiemy, jak sprawić, by auto pewnie szło bokiem, było niezawodne na odcince i precyzyjne w przekładkach. Realizujemy projekty na każdy budżet: od wozów typu Street Legal po profesjonalne driftowozy w specyfikacji PRO.",
+      "galleryAriaLabel": "Galeria realizacji",
+      "galleryThumbAlt": "Miniatura {{n}}",
+      "galleryPrev": "Poprzednie zdjęcie",
+      "galleryNext": "Następne zdjęcie",
+      "galleryDots": "Wskaźniki galerii",
+      "galleryGoTo": "Przejdź do zdjęcia {{n}}",
+      "ctaAria": "Umów wizytę"
+    },
+    "brands": {
+      "metaTitle": "Kratos Motors — Serwis {{brand}} | Wrocław",
+      "metaDescription": "Serwis i tuning samochodów {{brand}} we Wrocławiu. Diagnostyka, naprawy i opieka premium od Kratos Motors.",
+      "heroTitle": "Inżynieryjna precyzja dla Twojego {{brand}}",
+      "heroLead": "Obsługa klasy premium dla samochodów sportowych i luksusowych. Doświadczenie z toru wyścigowego w Twoim garażu.",
+      "processTitle": "Jak działamy",
+      "processCards": [
+        {
+          "title": "Wstępna konsultacja",
+          "body": "Omówienie zgłoszenia i określenie Twoich kluczowych oczekiwań."
+        },
+        {
+          "title": "Diagnostyka i oględziny",
+          "body": "Dokładna identyfikacja usterki oraz ocena stanu technicznego."
+        },
+        {
+          "title": "Uzgodnienie zakresu prac",
+          "body": "Zatwierdzenie planu działań oraz przewidywanych kosztów serwisu."
+        },
+        {
+          "title": "Realizacja naprawy",
+          "body": "Profesjonalne wykonanie zleconych prac przez naszych specjalistów."
+        },
+        {
+          "title": "Końcowa kontrola jakości",
+          "body": "Dokładne sprawdzenie poprawności naprawy przed wydaniem auta."
+        }
+      ],
+      "servicesTitle": "Usługi",
+      "servicesRows": {
+        "technical": [
+          "Pełna diagnostyka systemów (OEM)",
+          "Serwis olejowy zgodnie ze standardami fabrycznymi",
+          "Obsługa układów dolotowych i filtracji"
+        ],
+        "main": [
+          "Naprawy skrzyń biegów i układów przeniesienia napędu",
+          "Serwis układu jezdnego oraz hamulcowego",
+          "Naprawa i modyfikacja układów wydechowych"
+        ],
+        "additional": [
+          "Montaż podzespołów performance",
+          "Modyfikacje elektroniczne i kodowanie",
+          "Przeglądy przed zakupem i serwis sezonowy"
+        ]
+      },
+      "facts": {
+        "audi": {
+          "title": "Eurotour na jednym baku",
+          "body": "Seryjne Audi A6 TDI ultra ustanowiło światowy rekord ekonomiczności, przejeżdżając przez 14 europejskich krajówna jednym zbiorniku paliwa. Samochód pokonał dystans 1865 km bez tankowania, podróżując od Holandii aż do Węgier."
+        },
+        "bmw": {
+          "title": "Rekord niepobity od 30 lat",
+          "body": "Silnik BMW S70/2 napędzający McLarena F1 to najszybsza wolnossąca jednostka na świecie. Jego komora została wyłożona czystym złotem, a prędkość 386 km/h pozostaje nieosiągalna dla konkurencji bez turbodoładowania."
+        },
+        "mercedes": {
+          "title": "160 000 km na pełnym gazie",
+          "body": "W 2005 roku trzy Mercedesy E 320 CDI ustanowiły rekord świata, pokonując 160 000 km w miesiąc ze średnią prędkością 224 km/h. Ten całodobowy maraton na torze w Teksasie oficjalnie potwierdził fenomenalną trwałość silników diesla BlueTEC."
+        },
+        "porsche": {
+          "title": "Absolutny Król „Zielonego Piekła”",
+          "body": "PW 2018 roku Porsche 919 Hybrid Evo zmiażdżyło 35-letni rekord toru Nürburgring. Kierowca Timo Bernhard pokonał 20-kilometrową „Pętlę Północną” w niewyobrażalne 5 minut i 19 sekund. Średnia prędkość wyniosła 233 km/h — to szybciej niż wiele helikopterów."
+        },
+        "volkswagen": {
+          "title": "Elektryk na szczycie",
+          "body": "lektryczny Volkswagen ID.4 GTX ustanowił światowy rekord, wjeżdżając na szczyt wulkanu w Andach na wysokość 5816 m n.p.m. W rzadkim powietrzu, gdzie silniki spalinowe tracą moc, napęd elektryczny zachował pełną wydajność, udowadniając swoją przewagę w ekstremalnych warunkach górskich."
+        },
+        "ford": {
+          "title": "160 mln km bez rąk",
+          "body": "System autonomicznej jazdy Ford BlueCruise przekroczył rekordowe 160 milionów kilometrów przebiegu na autostradach. Technologia umożliwiła kierowcom bezpieczną jazdę bez dotykania kierownicy, umacniając pozycję Forda jako lidera masowych technologii autonomicznych."
+        }
+      }
+    },
+    "privacy": {
+      "title": "Polityka prywatności",
+      "metaTitle": "Kratos Motors — Polityka prywatności",
+      "metaDescription": "Polityka prywatności Kratos Motors — zasady przetwarzania danych osobowych w serwisie i przy zgłoszeniach.",
+      "body": "Treść polityki prywatności — do uzupełnienia przez administratora danych."
+    },
+    "404": {
+      "title": "Strona nie znaleziona",
+      "metaTitle": "404 — Strona nie znaleziona | Kratos Motors",
+      "metaDescription": "Żądana strona nie istnieje. Wróć na stronę główną Kratos Motors we Wrocławiu."
+    }
+  },
+  "form": {
+    "title": "Umów wizytę",
+    "customerInfoTitle": "Informacje o kliencie",
+    "firstName": "Imię",
+    "lastName": "Nazwisko (opcjonalnie)",
+    "phoneNumber": "Numer telefonu",
+    "emailShort": "Email",
+    "next": "Dalej",
+    "phoneDigitsPlaceholder": "123 456 789",
+    "name": "Imię i nazwisko",
+    "email": "E-mail",
+    "phone": "Telefon",
+    "message": "Wiadomość",
+    "submit": "Wyślij",
+    "required": "To pole jest wymagane",
+    "invalidEmail": "Podaj prawidłowy adres e-mail",
+    "invalidPhone": "Podaj prawidłowy numer telefonu",
+    "invalidYear": "Podaj prawidłowy rok (4 cyfry)",
+    "bookingConsent": "Klikając „Dalej”, potwierdzasz zapoznanie się z <privacyLink>informacją o przetwarzaniu danych osobowych</privacyLink> przez Kratos Motors. Podane dane wykorzystamy wyłącznie w celu kontaktu z Tobą i obsługi zgłoszenia serwisowego.",
+    "bookingCarTitle": "Informacje o samochodzie",
+    "bookingCarMakeModel": "Marka i model samochodu",
+    "bookingCarEngine": "Typ silnika (opcjonalnie)",
+    "bookingCarYear": "Rok produkcji (opcjonalnie)",
+    "bookingCarFault": "Opis usterki",
+    "bookingCarFaultPlaceholder": "Co się dzieje z autem?",
+    "bookingCarExtra": "Dodatkowe informacje (opcjonalnie)",
+    "bookingCarExtraPlaceholder": "Dodatkowe informacje (opcjonalnie)",
+    "bookingDetailsTitle": "Szczegóły zgłoszenia",
+    "bookingServiceLabel": "Usługa",
+    "bookingBack": "Wstecz",
+    "bookingSend": "Wyślij zgłoszenie",
+    "bookingSuccessTitle": "Dziękujemy!",
+    "bookingSuccessHeadline": "Formularz wysłany!",
+    "bookingSuccessBody": "Dziękujemy za zgłoszenie. Nasz zespół skontaktuje się z Tobą wkrótce.",
+    "bookingClose": "Zamknij",
+    "bookingBackToHome": "Wróć do strony głównej"
+  }
+}

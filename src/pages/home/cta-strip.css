@@ -1,0 +1,70 @@
+/* ========== 3. CTA strip — 490px height, full width image, content bottom center */
+.home-cta-strip {
+  height: 426px;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-cta-strip__bg {
+  position: absolute;
+  inset: 0;
+}
+
+.home-cta-strip__bg img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+.home-cta-strip__bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.home-cta-strip--no-overlay .home-cta-strip__bg::after {
+  content: none;
+}
+
+.home-cta-strip__content {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: var(--layout-inner-max);
+  padding: 0 var(--section-px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  z-index: 1;
+}
+
+.home-cta-strip__text {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  line-height: 1.6;
+  color: var(--color-text);
+  text-align: center;
+  margin: 0;
+}
+
+@media (max-width: 1000px) {
+  .home-cta-strip {
+    height: 360px;
+  }
+}
+@media (max-width: 700px) {
+  .home-cta-strip {
+    height: 260px;
+  }
+}

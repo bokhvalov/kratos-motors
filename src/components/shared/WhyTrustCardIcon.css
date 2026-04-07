@@ -1,0 +1,102 @@
+/* Why-trust card icons (layered SVGs) */
+
+.why-trust-section__icon {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 50%;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.why-trust-section__icon-layer {
+  position: absolute;
+  pointer-events: none;
+}
+
+.why-trust-section__icon-layer img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.why-trust-section__icon-layer--fill {
+  inset: 0;
+}
+
+/* icons=7 */
+.why-trust-section__icon-layer--i7-1 {
+  inset: 22% 20% 19.38% 26.67%;
+}
+
+.why-trust-section__icon-layer--i7-2 {
+  inset: 45.09% 49.86% 52.46% 35.32%;
+}
+
+.why-trust-section__icon-layer--i7-3 {
+  inset: 51.94% 31.27% 23.99% 57.59%;
+}
+
+/* icons=8 */
+.why-trust-section__icon-layer--i8-1 {
+  inset: 45.09% 49.86% 52.46% 35.32%;
+}
+
+.why-trust-section__icon-layer--i8-gear {
+  left: 15.71%;
+  right: 20%;
+  top: 12px;
+  aspect-ratio: 45 / 40;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-trust-section__icon-flip-y {
+  transform: scaleY(-1);
+  width: 45px;
+  height: 40px;
+  position: relative;
+}
+
+.why-trust-section__icon-flip-y img {
+  object-fit: fill;
+}
+
+/* icons=10 */
+.why-trust-section__icon-layer--i10-1 {
+  inset: 28% 24% 28.59% 39.31%;
+}
+
+.why-trust-section__icon-layer--i10-2 {
+  inset: 36.93% 36.9% 41.49% 51.44%;
+}
+
+.why-trust-section__icon-layer--i10-3 {
+  inset: 39.16% 58.73% 57.12% 22.67%;
+}
+
+.why-trust-section__icon-layer--i10-4 {
+  inset: 47.85% 56.25% 48.43% 25.15%;
+}
+
+.why-trust-section__icon-layer--i10-5 {
+  inset: 56.53% 53.77% 39.75% 27.63%;
+}
+
+/* icons=9 */
+.why-trust-section__icon-layer--i9-0 {
+  left: 0;
+  top: 0;
+  width: 70px;
+  height: 70px;
+}
+
+.why-trust-section__icon-layer--i9-1 {
+  inset: 24.29% 23.05% 23.06% 24.29%;
+}

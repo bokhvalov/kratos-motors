@@ -1,0 +1,142 @@
+/* KRATOS MOTORS — design tokens */
+
+:root {
+  /* Colors */
+  --color-bg: #090a0e;
+  --color-navbar: #191b1f;
+  --color-footer: #14161b;
+  --color-accent: #d70300;
+  /* Primary hover / pressed */
+  --color-accent-hover: #b60402;
+  /* Maps / tel link hover */
+  --color-maps-link: #1a73e8;
+  --color-text: #ffffff;
+  --color-text-muted: #686767;
+  --color-border: #1f1f1f;
+
+  /* Typography */
+  --font-heading: "Big Shoulders Display", sans-serif;
+  --font-body: "Montserrat", sans-serif;
+  /* Tablet/mobile body (Inter) */
+  --font-inter: "Inter", sans-serif;
+  --font-ui: "Roboto", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+
+  /* Type scale — H1 desktop 48px, mobile 36px (UiHeading.css) */
+  --text-h1: 2.25rem;
+  --text-h1-mobile: 1.75rem;
+  --text-h2: 1.375rem;
+  --text-h2-mobile: 1.125rem;
+  --text-h3: 1.125rem;
+  --text-body: 1rem;
+  --text-small: 0.875rem;
+  --text-caption: 0.8125rem;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+
+  /* Layout breakpoints */
+  --bp-mobile-max: 394px;
+  --bp-tablet-max: 744px;
+  --bp-desktop: 1440px;
+  /* Aliases for media queries */
+  --bp-mobile: 394px;
+  --bp-tablet: 744px;
+
+  /* 1440px max width − 2× section padding → inner column */
+  --layout-frame-max: var(--bp-desktop);
+  --layout-inner-max: 1360px; /* 1440 - 2×40 */
+
+  /* Hero text column max width */
+  --hero-text-container-width: 463px;
+
+  /* Fixed header total height (top bar + nav) */
+  --site-header-height: 120px;
+  --header-height: 70px;
+  --logo-width: 147px;
+  --logo-height: 70px;
+  --logo-width-mobile: 136px;
+  --logo-height-mobile: 60px;
+
+  /* Primary buttons (button 1=*) */
+  --btn-height: 48px;
+  --btn-height-header: 38px;
+  --btn-height-mobile: 56px;
+  --btn-height-tablet: 56px;
+  --btn-width: 207px;
+  --btn-width-header: 205px;
+  --btn-width-wide: 551px;
+  --btn-width-mobile: 173px;
+  --btn-width-tablet: 246px;
+
+  /* Menu items — 120×50 */
+  --nav-item-min-width: 120px;
+  --nav-item-height: 50px;
+
+  /* Form — 549×48 */
+  --input-height: 48px;
+  --input-max-width: 600px;
+
+  /* Lang switcher — 55×50 */
+  --lang-width: 55px;
+  --lang-height: 50px;
+
+  /* Radii */
+  --radius-button: 100px;
+  --radius-section: 50px;
+  --radius-section-mobile: 30px;
+  --radius-card: 20px;
+  --radius-input: 100px;
+  --radius-form-block: 20px;
+
+  /* Section horizontal padding: 40 / 24 / 16 by breakpoint */
+  --header-px: 40px;
+  --footer-px: 40px;
+  --section-px: 40px;
+
+  /* Footer map height + floor so the grid doesn’t short-change the iframe */
+  --footer-map-height: 522px;
+  --footer-map-min-height: 468px;
+
+  /* Muted grey in headings */
+  --color-muted-heading: #65696d;
+
+  /* Input placeholder */
+  --color-placeholder: #b5b5b5;
+
+  /* Social icon cell 24×24 */
+  --header-social-bubble-size: 24px;
+
+  /* Contact glyph cell (header + footer) */
+  --contact-icon-cell: 28px;
+}
+
+@media (max-width: 744px) {
+  :root {
+    --section-px: 24px;
+    --header-px: 24px;
+    --footer-px: 24px;
+  }
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --site-header-height: 60px;
+  }
+}
+
+@media (max-width: 394px) {
+  :root {
+    /* Tight phones: 20px matches breadcrumb/content inset */
+    --section-px: 20px;
+    --header-px: 20px;
+    --footer-px: 20px;
+  }
+}

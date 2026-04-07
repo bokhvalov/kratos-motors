@@ -1,0 +1,16 @@
+@media (max-width: 394px) {
+  .hero {
+    min-height: 744px;
+  }
+
+  .home-cta-strip,
+  .final-cta-section {
+    display: none;
+  }
+}
+
+@media (max-width: 744px) {
+  .final-cta-section {
+    display: none;
+  }
+}

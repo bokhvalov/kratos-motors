@@ -1,0 +1,214 @@
+/* ========== 2. Services grid (t.z.) — layout inside .layout-content */
+.home-tz {
+  padding: 120px 0;
+  min-height: 621px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@property --tz-gradient-fade {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 35.756%;
+}
+
+/* Horizontal scroll strip on narrow viewports */
+.home-tz__strip {
+  width: 100%;
+}
+
+.home-tz__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 437fr) minmax(0, 206fr) minmax(0, 207fr) minmax(0, 206fr);
+  gap: clamp(12px, 2.4vw, 24px);
+  max-width: min(1128px, 100%);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.home-tz__card {
+  height: auto;
+  min-width: 0;
+  width: 100%;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  display: block;
+}
+
+.home-tz__card:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  z-index: 1;
+}
+
+.home-tz__card--large {
+  grid-column: span 1;
+  aspect-ratio: 437 / 381;
+}
+
+/* Middle column slightly wider aspect */
+.home-tz__grid > .home-tz__card:not(.home-tz__card--large):nth-child(3) {
+  aspect-ratio: 207 / 381;
+}
+
+.home-tz__card:not(.home-tz__card--large):not(:nth-child(3)) {
+  aspect-ratio: 206 / 381;
+}
+
+.home-tz__img {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1);
+  transform-origin: center center;
+  transition: transform 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Nudge one tile vertically */
+.home-tz__img--offset {
+  transform: translateY(10px);
+}
+
+/* Top fade: page bg → transparent */
+.home-tz__card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  --tz-gradient-fade: 35.756%;
+  background: linear-gradient(
+    179.7912827614171deg,
+    var(--color-bg) 0.20804%,
+    rgba(9, 10, 14, 0) var(--tz-gradient-fade)
+  );
+  transition: --tz-gradient-fade 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Hover zoom on image */
+.home-tz__card:hover .home-tz__img,
+.home-tz__card:focus-visible .home-tz__img {
+  transform: scale(1.18);
+}
+
+/* Keep Y offset when scaling (avoids layout jump) */
+.home-tz__card:hover .home-tz__img.home-tz__img--offset,
+.home-tz__card:focus-visible .home-tz__img.home-tz__img--offset {
+  transform: translateY(10px) scale(1.18);
+}
+
+.home-tz__card:hover::after,
+.home-tz__card:focus-visible::after {
+  --tz-gradient-fade: 52%;
+}
+
+.home-tz__label {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+  z-index: 2;
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: var(--font-weight-semibold);
+  line-height: 24px;
+  text-transform: uppercase;
+  transition: transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.home-tz__card:hover .home-tz__label,
+.home-tz__card:focus-visible .home-tz__label {
+  transform: translateY(-3px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-tz__img,
+  .home-tz__card::after,
+  .home-tz__label {
+    transition: none;
+  }
+
+  .home-tz__card:hover .home-tz__img,
+  .home-tz__card:focus-visible .home-tz__img {
+    transform: none;
+  }
+
+  .home-tz__card:hover::after,
+  .home-tz__card:focus-visible::after {
+    --tz-gradient-fade: 35.756%;
+  }
+
+  .home-tz__card:hover .home-tz__label,
+  .home-tz__card:focus-visible .home-tz__label {
+    transform: none;
+  }
+}
+
+/* ≤1110px: horizontal scroll row — tablet-style strip (396 + 216×3, gap 24) */
+@media (max-width: 1110px) {
+  .home-tz {
+    padding: 60px 0;
+    min-height: 0;
+  }
+
+  .home-tz__strip {
+    display: block;
+    width: calc(100% + 2 * var(--section-px));
+    margin-inline: calc(-1 * var(--section-px));
+    padding-inline: var(--section-px);
+    box-sizing: border-box;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .home-tz__grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 24px;
+    width: max-content;
+    max-width: none;
+    margin: 0;
+  }
+
+  .home-tz__card {
+    flex: 0 0 auto;
+    height: auto;
+  }
+
+  .home-tz__card--large {
+    width: clamp(280px, 53.2vw, 396px);
+    aspect-ratio: 396 / 380;
+  }
+
+  .home-tz__card:not(.home-tz__card--large) {
+    width: clamp(160px, 29vw, 216px);
+    aspect-ratio: 216 / 380;
+  }
+}
+
+/* ≤394px: 299×299 cards, gap 16 — home mobile */
+@media (max-width: 394px) {
+  .home-tz {
+    padding: 30px 16px;
+  }
+
+  .home-tz__grid {
+    gap: 16px;
+  }
+
+  .home-tz__card,
+  .home-tz__card--large {
+    width: 299px;
+    height: auto;
+    aspect-ratio: 1;
+  }
+}

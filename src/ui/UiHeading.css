@@ -1,0 +1,99 @@
+/* Headings — Montserrat */
+
+.ui-heading {
+  margin: 0;
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.2;
+}
+
+.ui-heading[data-figma-variant='Property 1=H1 WHITE'] {
+  font-size: 48px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.ui-heading[data-figma-variant='Property 1=H1 GREY'] {
+  font-size: 48px;
+  color: var(--color-muted-heading);
+  text-transform: uppercase;
+}
+
+.ui-heading[data-figma-variant='Property 1=H1 mobile'] {
+  font-size: 36px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.ui-heading[data-figma-variant='Property 1=H1 semiBlod black'] {
+  font-size: 48px;
+  font-weight: var(--font-weight-semibold);
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.ui-heading[data-figma-variant='Property 1=H2'] {
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.ui-heading[data-figma-variant='Property 1=H2 mobile'] {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.ui-heading[data-figma-variant='Property 1=H3 white medium'] {
+  font-size: 19px;
+  font-weight: var(--font-weight-medium);
+  color: #ffffff;
+}
+
+.ui-heading[data-figma-variant='Property 1=H3 black'] {
+  font-size: 19px;
+  font-weight: var(--font-weight-medium);
+  color: #000000;
+}
+
+.ui-heading[data-figma-variant='Property 1=H3 regular black'] {
+  font-size: 19px;
+  color: #000000;
+}
+
+.ui-heading[data-figma-variant='Property 1=H3 semiBod black'] {
+  font-size: 20px;
+  font-weight: var(--font-weight-semibold);
+  color: #000000;
+}
+
+.ui-heading[data-figma-variant='Property 1=H3 regular white'] {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.ui-heading[data-figma-variant='Property 1=Variant8'] {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.ui-heading[data-figma-variant='Property 1=H4 medium white'] {
+  font-size: 17px;
+  font-weight: var(--font-weight-medium);
+  color: #ffffff;
+}
+
+.ui-heading[data-figma-variant='Property 1=H4 regular white'] {
+  font-size: 17px;
+  color: #ffffff;
+}
+
+.ui-heading[data-figma-variant='Property 1=H5 medium white'] {
+  font-size: 15px;
+  font-weight: var(--font-weight-medium);
+  color: #ffffff;
+}
+
+.ui-heading[data-figma-variant='Property 1=H5 semiBlod red'] {
+  font-size: 15px;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-accent);
+}

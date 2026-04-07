@@ -1,0 +1,100 @@
+/* Lead form success dialog */
+
+.home-form-success-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 960;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.home-form-success-modal {
+  width: 100%;
+  max-width: 335px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+.home-form-success-modal__icon {
+  display: block;
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+}
+
+.home-form-success-modal__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+
+.home-form-success-modal__title.ui-heading[data-figma-variant='Property 1=H3 semiBod black'] {
+  margin: 0;
+  width: 100%;
+  font-size: 28px;
+  font-weight: var(--font-weight-semibold);
+  line-height: normal;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: normal;
+  hyphens: none;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.home-form-success-modal__text {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  line-height: normal;
+  color: #000000;
+  text-align: center;
+  hyphens: none;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.home-form-success-modal__btn.ui-btn[data-figma-variant='button 1=1'] {
+  width: 171px;
+  min-width: 171px;
+  height: 56px;
+  min-height: 56px;
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: var(--font-weight-medium);
+}
+
+.home-form-success-modal__btn.ui-btn[data-figma-variant='button 1=1']:hover,
+.home-form-success-modal__btn.ui-btn[data-figma-variant='button 1=1']:active {
+  background: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+  color: var(--color-text);
+}
+
+@media (max-width: 400px) {
+  .home-form-success-modal__title.ui-heading[data-figma-variant='Property 1=H3 semiBod black'] {
+    font-size: 22px;
+  }
+
+  .home-form-success-modal__btn.ui-btn[data-figma-variant='button 1=1'] {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+}

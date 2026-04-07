@@ -1,0 +1,98 @@
+/*
+ * menu=1: default white
+ * menu=2: accent, no bar
+ * menu=3: accent + 1px bar (layer, not text underline)
+ * menu=4: muted (footer)
+ */
+
+.ui-nav-menu-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--nav-item-height);
+  padding: 10px 8px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  line-height: normal;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.ui-nav-menu-link__label {
+  transition:
+    color 0.15s ease,
+    text-decoration-color 0.15s ease;
+  text-decoration: none;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 1px;
+}
+
+.ui-nav-menu-link[data-figma-variant='menu=1'] .ui-nav-menu-link__label {
+  color: #ffffff;
+}
+
+/* Hover/focus: underline on inner label (flex <a> quirks) */
+.site-header .main-nav .ui-nav-menu-link[data-figma-variant='menu=1']:hover .ui-nav-menu-link__label,
+.site-header .main-nav .ui-nav-menu-link[data-figma-variant='menu=1']:focus-visible .ui-nav-menu-link__label {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-decoration-color: var(--color-accent);
+}
+
+.site-header .main-nav .ui-nav-menu-link[data-figma-variant='menu=2']:hover .ui-nav-menu-link__label,
+.site-header .main-nav .ui-nav-menu-link[data-figma-variant='menu=2']:focus-visible .ui-nav-menu-link__label {
+  text-decoration: underline;
+  text-decoration-color: var(--color-accent);
+}
+
+.footer-bar-nav .ui-nav-menu-link[data-figma-variant='menu=1']:hover .ui-nav-menu-link__label,
+.footer-bar-nav .ui-nav-menu-link[data-figma-variant='menu=1']:focus-visible .ui-nav-menu-link__label,
+.footer-bar-nav .ui-nav-menu-link[data-figma-variant='menu=4']:hover .ui-nav-menu-link__label,
+.footer-bar-nav .ui-nav-menu-link[data-figma-variant='menu=4']:focus-visible .ui-nav-menu-link__label {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-decoration-color: var(--color-accent);
+}
+
+/* Active: accent, horizontal layout */
+.ui-nav-menu-link[data-figma-variant='menu=2'] {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.ui-nav-menu-link[data-figma-variant='menu=2'] .ui-nav-menu-link__label {
+  color: var(--color-accent);
+}
+
+/* menu=3: accent + 1px bar (not used as header “current”) */
+.ui-nav-menu-link[data-figma-variant='menu=3'] .ui-nav-menu-link__label {
+  color: var(--color-accent);
+}
+
+.ui-nav-menu-link[data-figma-variant='menu=3']::after {
+  content: '';
+  align-self: stretch;
+  height: 1px;
+  flex-shrink: 0;
+  background-color: var(--color-accent);
+}
+
+.ui-nav-menu-link[data-figma-variant='menu=4'] {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.ui-nav-menu-link[data-figma-variant='menu=4'] .ui-nav-menu-link__label {
+  color: var(--color-text-muted);
+}
+
+.ui-nav-menu-link:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}

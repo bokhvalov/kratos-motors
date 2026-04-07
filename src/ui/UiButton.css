@@ -1,0 +1,462 @@
+/* Button variants */
+
+.ui-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-medium);
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  transition:
+    background-color 0.2s,
+    border-color 0.2s,
+    color 0.2s,
+    opacity 0.2s;
+  box-sizing: border-box;
+  border-radius: var(--radius-button);
+  /* Height from variant + align-items; same box for button and anchor */
+  padding: 0 24px;
+}
+
+button.ui-btn {
+  margin: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* iOS: kill faux focus ring when :focus-visible wouldn’t show */
+button.ui-btn:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* iOS sticky :hover: keep 1=1 looking like default on touch */
+@media (hover: none) {
+  .ui-btn[data-figma-variant='button 1=1']:hover,
+  .ui-btn[data-figma-variant='button 1=tablet1']:hover,
+  .ui-btn[data-figma-variant='button 1=mobile1']:hover {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--color-text);
+  }
+}
+
+.ui-btn:disabled,
+.ui-btn[disabled] {
+  opacity: 0.45;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.ui-btn:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* ——— button 1=* ——— */
+.ui-btn[data-figma-variant='button 1=1'],
+.ui-btn[data-figma-variant='button 1=tablet1'] {
+  min-width: var(--btn-width);
+  height: var(--btn-height);
+  min-height: var(--btn-height);
+  background: var(--color-accent);
+  color: var(--color-text);
+  border-color: var(--color-accent);
+}
+
+.ui-btn[data-figma-variant='button 1=tablet1'] {
+  min-width: var(--btn-width-tablet);
+  height: var(--btn-height-tablet);
+  min-height: var(--btn-height-tablet);
+}
+
+/* v1: hover/active ghost */
+.ui-btn[data-figma-variant='button 1=1']:hover,
+.ui-btn[data-figma-variant='button 1=1']:active,
+.ui-btn[data-figma-variant='button 1=tablet1']:hover,
+.ui-btn[data-figma-variant='button 1=tablet1']:active,
+.ui-btn[data-figma-variant='button 1=mobile1']:hover,
+.ui-btn[data-figma-variant='button 1=mobile1']:active {
+  background: transparent;
+  border-color: var(--color-accent);
+  color: var(--color-text);
+}
+
+.ui-btn[data-figma-variant='button 1=mobile1'] {
+  min-width: var(--btn-width-mobile);
+  height: var(--btn-height-mobile);
+  min-height: var(--btn-height-mobile);
+  background: var(--color-accent);
+  color: var(--color-text);
+  border-color: var(--color-accent);
+}
+
+.ui-btn[data-figma-variant='button 1=tablet2'],
+.ui-btn[data-figma-variant='button 1=mobile2'] {
+  background: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+  color: var(--color-text);
+}
+
+.ui-btn[data-figma-variant='button 1=tablet2'] {
+  min-width: var(--btn-width-tablet);
+  height: var(--btn-height-tablet);
+  min-height: var(--btn-height-tablet);
+}
+
+.ui-btn[data-figma-variant='button 1=mobile2'] {
+  min-width: var(--btn-width-mobile);
+  height: var(--btn-height-mobile);
+  min-height: var(--btn-height-mobile);
+}
+
+.ui-btn[data-figma-variant='button 1=2'],
+.ui-btn[data-figma-variant='button 2=2'] {
+  min-width: var(--btn-width);
+  height: var(--btn-height);
+  min-height: var(--btn-height);
+  background: transparent;
+  color: var(--color-text);
+  border-color: var(--color-accent);
+}
+
+.ui-btn[data-figma-variant='button 1=2']:hover,
+.ui-btn[data-figma-variant='button 1=2']:active,
+.ui-btn[data-figma-variant='button 2=2']:hover,
+.ui-btn[data-figma-variant='button 2=2']:active {
+  border-color: var(--color-text);
+  color: var(--color-text);
+}
+
+.ui-btn[data-figma-variant='button 1=3'] {
+  min-width: var(--btn-width);
+  height: var(--btn-height);
+  min-height: var(--btn-height);
+  background: #ffffff;
+  color: var(--color-bg);
+  border-color: #000000;
+}
+
+/* WhatsApp row: white border ghost */
+.ui-btn[data-figma-variant='button 1=3']:hover,
+.ui-btn[data-figma-variant='button 1=3']:active {
+  background: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.ui-btn[data-figma-variant='button 1=3']:focus-visible {
+  outline-color: #ffffff;
+}
+
+.ui-btn[data-figma-variant='button 1=4'] {
+  min-width: 205px;
+  height: var(--btn-height);
+  min-height: var(--btn-height);
+  background: transparent;
+  color: var(--color-text);
+  border-color: #ffffff;
+}
+
+.ui-btn[data-figma-variant='button 1=4']:hover {
+  border-color: var(--color-text);
+}
+
+/* button 2=1 — filled primary */
+.ui-btn[data-figma-variant='button 2=1'] {
+  min-width: 206px;
+  height: var(--btn-height);
+  min-height: var(--btn-height);
+  background: var(--color-accent);
+  color: var(--color-text);
+  border-color: var(--color-accent);
+}
+
+.ui-btn[data-figma-variant='button 2=1']:hover,
+.ui-btn[data-figma-variant='button 2=1']:active {
+  background: transparent;
+  border-color: var(--color-accent);
+  color: var(--color-text);
+}
+
+.ui-btn[data-figma-variant='button 1=5'] {
+  min-width: var(--btn-width-header);
+  height: var(--btn-height-header);
+  min-height: var(--btn-height-header);
+  background: var(--color-accent);
+  color: var(--color-text);
+  border-color: var(--color-accent);
+}
+
+.ui-btn[data-figma-variant='button 1=5']:hover,
+.ui-btn[data-figma-variant='button 1=5']:active {
+  background: transparent;
+  border-color: var(--color-accent);
+  color: var(--color-text);
+}
+
+.ui-btn[data-figma-variant='button 1=6'] {
+  min-width: var(--btn-width-header);
+  height: var(--btn-height-header);
+  min-height: var(--btn-height-header);
+  background: transparent;
+  color: var(--color-text);
+  border-color: var(--color-accent);
+}
+
+.ui-btn[data-figma-variant='button 1=6']:hover,
+.ui-btn[data-figma-variant='button 1=6']:active {
+  border-color: var(--color-text);
+  color: var(--color-text);
+}
+
+.ui-btn[data-figma-variant='button 1=7'],
+.ui-btn[data-figma-variant='button 3=1'] {
+  width: 100%;
+  height: var(--btn-height);
+  min-height: var(--btn-height);
+  background: var(--color-accent);
+  color: var(--color-text);
+  border-color: var(--color-accent);
+}
+
+.ui-btn[data-figma-variant='button 1=7']:hover,
+.ui-btn[data-figma-variant='button 1=7']:active,
+.ui-btn[data-figma-variant='button 3=1']:hover,
+.ui-btn[data-figma-variant='button 3=1']:active {
+  background: transparent;
+  border-color: var(--color-accent);
+  color: var(--color-text);
+}
+
+.ui-btn[data-figma-variant='button 1=8'],
+.ui-btn[data-figma-variant='button 3=2'] {
+  width: 100%;
+  max-width: var(--btn-width-wide);
+  height: var(--btn-height);
+  min-height: var(--btn-height);
+  background: transparent;
+  color: var(--color-text);
+  border-color: var(--color-accent);
+}
+
+.ui-btn[data-figma-variant='button 1=8']:hover,
+.ui-btn[data-figma-variant='button 3=2']:hover {
+  border-color: var(--color-text);
+  color: var(--color-text);
+}
+
+/* button 2 — tablet/mobile sizes */
+.ui-btn[data-figma-variant='button 2=tablet1'],
+.ui-btn[data-figma-variant='button 2=tablet2'] {
+  min-width: var(--btn-width-tablet);
+  height: var(--btn-height-tablet);
+  min-height: var(--btn-height-tablet);
+}
+
+.ui-btn[data-figma-variant='button 2=mobile1'],
+.ui-btn[data-figma-variant='button 2=mobile2'] {
+  min-width: var(--btn-width-mobile);
+  height: var(--btn-height-mobile);
+  min-height: var(--btn-height-mobile);
+}
+
+.ui-btn[data-figma-variant='button 2=tablet1'],
+.ui-btn[data-figma-variant='button 2=mobile1'] {
+  background: var(--color-accent);
+  color: var(--color-text);
+  border-color: var(--color-accent);
+}
+
+.ui-btn[data-figma-variant='button 2=tablet1']:hover,
+.ui-btn[data-figma-variant='button 2=tablet1']:active,
+.ui-btn[data-figma-variant='button 2=mobile1']:hover,
+.ui-btn[data-figma-variant='button 2=mobile1']:active {
+  background: transparent;
+  border-color: var(--color-accent);
+  color: var(--color-text);
+}
+
+.ui-btn[data-figma-variant='button 2=tablet2'],
+.ui-btn[data-figma-variant='button 2=mobile2'] {
+  background: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+  color: var(--color-text);
+}
+
+/* ——— Modal / secondary row ——— */
+.ui-btn[data-figma-variant='Component 17::button=1'] {
+  min-width: 207px;
+  height: 56px;
+  min-height: 56px;
+  background: var(--color-accent);
+  color: var(--color-text);
+  border-color: var(--color-accent);
+}
+
+.ui-btn[data-figma-variant='Component 17::button=1']:hover,
+.ui-btn[data-figma-variant='Component 17::button=1']:active {
+  background: transparent;
+  border-color: var(--color-accent);
+  color: var(--color-text);
+}
+
+.ui-btn[data-figma-variant='Component 17::button=2'] {
+  min-width: 207px;
+  height: 56px;
+  min-height: 56px;
+  background: transparent;
+  color: var(--color-text);
+  border-color: var(--color-accent);
+}
+
+.ui-btn[data-figma-variant='Component 17::button=button3'],
+.ui-btn[data-figma-variant='Component 17::button=button4'],
+.ui-btn[data-figma-variant='Component 17::button=button5'],
+.ui-btn[data-figma-variant='Component 17::button=button6'] {
+  min-width: 105px;
+  height: 48px;
+  min-height: 48px;
+  padding: 0 16px;
+  font-size: 14px;
+}
+
+.ui-btn[data-figma-variant='Component 17::button=button3'],
+.ui-btn[data-figma-variant='Component 17::button=button5'] {
+  background: var(--color-accent);
+  color: var(--color-text);
+  border-color: var(--color-accent);
+}
+
+.ui-btn[data-figma-variant='Component 17::button=button3']:hover,
+.ui-btn[data-figma-variant='Component 17::button=button3']:active,
+.ui-btn[data-figma-variant='Component 17::button=button5']:hover,
+.ui-btn[data-figma-variant='Component 17::button=button5']:active {
+  background: transparent;
+  border-color: var(--color-accent);
+  color: var(--color-text);
+}
+
+.ui-btn[data-figma-variant='Component 17::button=button4'],
+.ui-btn[data-figma-variant='Component 17::button=button6'] {
+  background: transparent;
+  color: var(--color-text);
+  border-color: var(--color-accent);
+}
+
+/* ——— Wide row ~401px ——— */
+.ui-btn[data-figma-variant='Component 21::button=1'] {
+  width: 100%;
+  max-width: 401px;
+  height: 48px;
+  min-height: 48px;
+  background: var(--color-accent);
+  color: var(--color-text);
+  border-color: var(--color-accent);
+}
+
+.ui-btn[data-figma-variant='Component 21::button=1']:hover,
+.ui-btn[data-figma-variant='Component 21::button=1']:active {
+  background: transparent;
+  border-color: var(--color-accent);
+  color: var(--color-text);
+}
+
+.ui-btn[data-figma-variant='Component 21::button=2'] {
+  width: 100%;
+  max-width: 401px;
+  height: 48px;
+  min-height: 48px;
+  background: transparent;
+  color: var(--color-text);
+  border-color: var(--color-accent);
+}
+
+.ui-btn[data-figma-variant='Component 21::button=mobile1'],
+.ui-btn[data-figma-variant='Component 21::button=mobile2'] {
+  width: 100%;
+  max-width: 401px;
+  height: 56px;
+  min-height: 56px;
+}
+
+.ui-btn[data-figma-variant='Component 21::button=mobile1'] {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-text);
+}
+
+.ui-btn[data-figma-variant='Component 21::button=mobile1']:hover,
+.ui-btn[data-figma-variant='Component 21::button=mobile1']:active {
+  background: transparent;
+  border-color: var(--color-accent);
+  color: var(--color-text);
+}
+
+.ui-btn[data-figma-variant='Component 21::button=mobile2'] {
+  background: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+  color: var(--color-text);
+}
+
+/* Narrow screens: default 1=1 sizing */
+@media (max-width: 744px) {
+  .ui-btn[data-figma-variant='button 1=1'] {
+    min-width: var(--btn-width-tablet);
+    height: var(--btn-height-tablet);
+    min-height: var(--btn-height-tablet);
+  }
+
+  .ui-btn[data-figma-variant='button 1=3'] {
+    min-width: var(--btn-width-tablet);
+    height: var(--btn-height-tablet);
+    min-height: var(--btn-height-tablet);
+  }
+
+  .ui-btn[data-figma-variant='button 1=7'],
+  .ui-btn[data-figma-variant='button 3=1'],
+  .ui-btn[data-figma-variant='button 3=2'],
+  .ui-btn[data-figma-variant='button 1=8'] {
+    min-width: var(--btn-width-tablet);
+    height: var(--btn-height-tablet);
+    min-height: var(--btn-height-tablet);
+  }
+}
+
+@media (max-width: 394px) {
+  .ui-btn[data-figma-variant='button 1=1'] {
+    min-width: var(--btn-width-mobile);
+    max-width: var(--btn-width-mobile);
+    height: var(--btn-height-mobile);
+    min-height: var(--btn-height-mobile);
+  }
+
+  .ui-btn[data-figma-variant='button 1=3'] {
+    min-width: var(--btn-width-mobile);
+    max-width: var(--btn-width-mobile);
+    height: var(--btn-height-mobile);
+    min-height: var(--btn-height-mobile);
+  }
+
+  .ui-btn[data-figma-variant='button 3=1'],
+  .ui-btn[data-figma-variant='button 3=2'],
+  .ui-btn[data-figma-variant='button 1=8'] {
+    min-width: var(--btn-width-mobile);
+    max-width: var(--btn-width-mobile);
+    height: var(--btn-height-mobile);
+    min-height: var(--btn-height-mobile);
+  }
+
+  .ui-btn[data-figma-variant='button 1=5'],
+  .ui-btn[data-figma-variant='button 1=6'] {
+    min-width: var(--btn-width-mobile);
+    height: var(--btn-height-mobile);
+    min-height: var(--btn-height-mobile);
+  }
+}

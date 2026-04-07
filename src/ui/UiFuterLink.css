@@ -1,0 +1,43 @@
+/* Contact row (header/footer) */
+
+.ui-futer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  line-height: var(--contact-icon-cell);
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.ui-futer-link:hover,
+.ui-futer-link:focus-visible {
+  color: var(--color-accent-hover);
+}
+
+/* Header row: hover uses accent */
+.ui-futer-link[data-figma-variant='futer=1 header']:hover,
+.ui-futer-link[data-figma-variant='futer=1 header']:focus-visible {
+  color: var(--color-accent);
+}
+
+/* Footer tel/address: maps-link blue on hover */
+.ui-futer-link[data-figma-variant='futer=1 futer']:visited,
+.ui-futer-link[data-figma-variant='futer=5']:visited {
+  color: var(--color-text);
+}
+
+.ui-futer-link[data-figma-variant='futer=1 futer']:hover,
+.ui-futer-link[data-figma-variant='futer=1 futer']:focus-visible,
+.ui-futer-link[data-figma-variant='futer=5']:hover,
+.ui-futer-link[data-figma-variant='futer=5']:focus-visible {
+  color: var(--color-maps-link);
+}
+
+.ui-futer-link[data-figma-variant='futer=5'] {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: currentColor;
+}

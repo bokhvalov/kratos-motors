@@ -1,0 +1,350 @@
+/* Lead form — image in frame ≥1445px; edge bleed ≤1444px */
+.lead-form-section {
+  padding: 60px 0;
+  overflow-x: clip;
+}
+
+.lead-form-section__inner {
+  max-width: var(--layout-frame-max);
+  margin: 0 auto;
+  padding-right: var(--section-px);
+  box-sizing: border-box;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: 0;
+}
+
+.lead-form-section--media-right .lead-form-section__inner {
+  flex-direction: row-reverse;
+  padding-right: 0;
+  padding-left: var(--section-px);
+}
+
+.lead-form-section__media {
+  position: relative;
+  flex: 1 1 300px;
+  min-width: 300px;
+  width: 50%;
+  max-width: none;
+  height: auto;
+  aspect-ratio: 749 / 750;
+  overflow: hidden;
+}
+
+.lead-form-section__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: right center;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* Image on the right: crop ~30% off the right edge (wider asset, clip at frame). */
+.lead-form-section--media-right .lead-form-section__img {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: auto;
+  width: calc(100% / 0.65);
+  max-width: none;
+  height: 100%;
+  object-fit: cover;
+  object-position: left center;
+}
+
+@media (min-width: 1445px) {
+  .lead-form-section--media-left .lead-form-section__inner {
+    padding-left: var(--section-px);
+  }
+}
+
+@media (max-width: 1444px) {
+  .lead-form-section--media-left .lead-form-section__media {
+    margin-left: calc(
+      -1 * ((100vw - min(100vw, var(--layout-frame-max))) / 2 + var(--section-px))
+    );
+  }
+
+  .lead-form-section--media-right .lead-form-section__media {
+    margin-right: calc(
+      -1 * ((100vw - min(100vw, var(--layout-frame-max))) / 2 + var(--section-px))
+    );
+  }
+}
+
+/* ≤648px: hide side image */
+@media (max-width: 648px) {
+  .lead-form-section__media {
+    display: none;
+  }
+}
+
+.lead-form-section__content {
+  flex: 1 1 362px;
+  min-width: 310px;
+  width: 100%;
+  max-width: 560px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: stretch;
+}
+
+/* Two-line H1 (white + grey) */
+.lead-form-section__heading {
+  margin: 0;
+}
+
+.lead-form-section__heading-line.ui-heading {
+  display: inline;
+}
+
+.lead-form-section__form {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.lead-form-section__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.lead-form-section__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.lead-form-section__error {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: var(--font-weight-regular);
+  line-height: normal;
+  color: var(--color-accent);
+}
+
+.lead-form-section__field .ui-input,
+.lead-form-section__select-wrap .ui-input {
+  max-width: none;
+  width: 100%;
+}
+
+.lead-form-section__field .ui-input[data-figma-variant='form=1'][aria-invalid='true'],
+.lead-form-section__select-wrap .ui-input[data-figma-variant='form=1'][aria-invalid='true'] {
+  border-color: var(--color-accent);
+}
+
+.lead-form-section__select-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.lead-form-section__select-placeholder {
+  color: var(--color-placeholder);
+}
+
+.lead-form-section__select-value {
+  color: var(--color-text);
+}
+
+.lead-form-section__select-chevron {
+  flex-shrink: 0;
+  color: var(--color-text);
+}
+
+/* Select chevron follows input border accent */
+.lead-form-section__select-wrap .ui-input[data-figma-variant='form=1']:hover .lead-form-section__select-chevron,
+.lead-form-section__select-wrap .ui-input[data-figma-variant='form=1']:focus-visible .lead-form-section__select-chevron,
+.lead-form-section__select-wrap .ui-input[data-figma-variant='form=1'][aria-expanded='true'] .lead-form-section__select-chevron {
+  color: var(--color-accent);
+}
+
+.lead-form-section__select-wrap .ui-input[data-figma-variant='form=1'][aria-expanded='true'] {
+  border-color: var(--color-accent);
+}
+
+/* Dropdown panel */
+.lead-form-section__select-list {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-height: min(320px, 70vh);
+  overflow-y: auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+
+.lead-form-section__select-item {
+  margin: 0;
+  padding: 0;
+}
+
+.lead-form-section__select-option {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 50px;
+  margin: 0;
+  padding: 10px 16px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  line-height: normal;
+  color: #000000;
+  text-align: left;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.lead-form-section__select-option:hover,
+.lead-form-section__select-option:focus-visible {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.lead-form-section__select-option:focus-visible {
+  outline: none;
+}
+
+/* Full-width submit (override UiButton 1=7 max-width) */
+.lead-form-section__submit.ui-btn {
+  width: 100%;
+  max-width: none;
+}
+
+@media (max-width: 970px) {
+  .lead-form-section__heading-line.ui-heading[data-figma-variant='Property 1=H1 WHITE'],
+  .lead-form-section__heading-line.ui-heading[data-figma-variant='Property 1=H1 GREY'] {
+    font-size: 36px !important;
+  }
+  .lead-form-section__content{
+    gap: 25px;
+  }
+}
+
+@media (max-width: 744px) and (min-width: 395px) {
+  .lead-form-section__inner {
+    flex-direction: row;
+    align-items: stretch;
+    gap: 24px;
+  }
+
+  .lead-form-section--media-right .lead-form-section__inner {
+    flex-direction: row-reverse;
+  }
+
+  .lead-form-section__content {
+    flex: 1 1 50%;
+    width: 50%;
+    max-width: none;
+    min-width: 0;
+    padding-left: 0;
+    align-self: stretch;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .lead-form-section__img {
+    object-fit: contain;
+    object-position: right center;
+  }
+
+  .lead-form-section--media-right .lead-form-section__img {
+    width: calc(100% / 0.65);
+    max-width: none;
+    left: 0;
+    right: auto;
+    object-fit: cover;
+    object-position: left center;
+  }
+
+  .lead-form-section__heading-line.ui-heading {
+    font-size: 36px;
+  }
+
+  .lead-form-section__heading-line.ui-heading[data-figma-variant='Property 1=H1 WHITE'],
+  .lead-form-section__heading-line.ui-heading[data-figma-variant='Property 1=H1 GREY'] {
+    font-size: 36px !important;
+  }
+
+  .lead-form-section__form {
+    gap: 24px;
+  }
+
+  /* Tablet: taller fields */
+  .lead-form-section__field .ui-input[data-figma-variant='form=1'],
+  .lead-form-section__select-wrap .ui-input[data-figma-variant='form=1'] {
+    height: 56px;
+  }
+}
+
+@media (min-width: 395px) and (max-width: 648px) {
+  .lead-form-section__inner {
+    flex-direction: column;
+    align-items: stretch;
+    padding-inline: var(--section-px);
+  }
+
+  /* --media-right uses padding-right: 0 at base specificity (0,2,0); restore insets when image is hidden */
+  .lead-form-section--media-right .lead-form-section__inner {
+    padding-left: var(--section-px);
+    padding-right: var(--section-px);
+  }
+
+  .lead-form-section__content {
+    flex: none;
+    width: 100%;
+    max-width: none;
+    gap: 40px;
+  }
+}
+@media (max-width: 394px) {
+  .lead-form-section {
+    padding: 30px 16px;
+  }
+
+  .lead-form-section__inner {
+    flex-direction: column;
+    gap: 24px;
+    padding-right: 0;
+  }
+
+  .lead-form-section__heading-line.ui-heading {
+    font-size: 36px;
+  }
+
+  .lead-form-section__heading-line.ui-heading[data-figma-variant='Property 1=H1 WHITE'],
+  .lead-form-section__heading-line.ui-heading[data-figma-variant='Property 1=H1 GREY'] {
+    font-size: 36px !important;
+  }
+
+  .lead-form-section__form {
+    gap: 40px;
+  }
+
+  /* Mobile: taller fields */
+  .lead-form-section__field .ui-input[data-figma-variant='form=1'],
+  .lead-form-section__select-wrap .ui-input[data-figma-variant='form=1'] {
+    height: 56px;
+  }
+}

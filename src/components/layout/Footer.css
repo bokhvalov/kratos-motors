@@ -1,0 +1,309 @@
+.site-footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Footer shell: bg + top radius */
+.footer-main {
+  background: var(--color-footer);
+  border-radius: var(--radius-section) var(--radius-section) 0 0;
+}
+
+.footer-main-inner {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: var(--layout-frame-max);
+  margin: 0 auto;
+  padding: 35px var(--footer-px) 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  align-items: start;
+  min-width: 0;
+}
+
+/* Two columns; shorter contact stack centers against map */
+@media (min-width: 746px) {
+  .footer-main-inner {
+    grid-template-columns: minmax(290px, 389px) minmax(290px, 1fr);
+    align-items: center;
+  }
+}
+
+@media (max-width: 744px) and (min-width: 652px) {
+  .footer-main-inner {
+    grid-template-columns: repeat(2, minmax(290px, 1fr));
+    align-items: center;
+  }
+}
+
+@media (max-width: 651px) {
+  .footer-main-inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer-aside {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  --contact-icon-cell: 24px;
+}
+
+/* Contact cards spacing */
+.footer-block {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-form-block);
+  padding: 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 5px;
+  width: 100%;
+  min-width: 0;
+}
+
+/* Card titles 12px, body 14px */
+.footer-heading.ui-heading,
+.footer-heading.ui-heading[data-figma-variant='Property 1=H5 semiBlod red'] {
+  font-size: 12px !important;
+  line-height: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+.footer-line {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  min-width: 0;
+}
+
+.footer-futer-icon-wrap {
+  flex: 0 0 var(--contact-icon-cell);
+  width: var(--contact-icon-cell);
+  height: var(--contact-icon-cell);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.footer-futer-icon-img {
+  display: block;
+  flex-shrink: 0;
+}
+
+.footer-futer-icon-svg {
+  display: block;
+  flex-shrink: 0;
+}
+
+.footer-futer-icon-svg--tel {
+  width: 13px;
+  height: 14px;
+}
+
+.footer-futer-icon-svg--pin {
+  width: 11px;
+  height: 14px;
+}
+
+/* Contact rows (address, phone) */
+.footer-address-link.ui-futer-link,
+.footer-phone-link.ui-futer-link {
+  flex: 1 1 auto;
+  min-width: 0;
+  line-height: var(--contact-icon-cell);
+}
+
+.footer-address-link.ui-futer-link {
+  font-weight: var(--font-weight-regular);
+}
+
+.footer-hours-text {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  line-height: var(--contact-icon-cell);
+  color: var(--color-text);
+}
+
+/* Directions link */
+.footer-route-link.ui-text-link {
+  gap: 6px;
+  line-height: var(--contact-icon-cell);
+}
+
+/* Social sizing matches header tokens */
+.footer-block .header-media-list {
+  margin-top: 0;
+}
+
+/* Map iframe fills absolute frame (height from tokens) */
+.footer-map-shell {
+  min-width: 0;
+  width: 100%;
+}
+
+.footer-map-frame {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  height: var(--footer-map-height);
+  min-height: var(--footer-map-min-height);
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.footer-map-iframe {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  border: 0;
+}
+
+/* Bottom bar */
+.footer-bar {
+  background: var(--color-footer);
+  /* Total bar height ~186px */
+  padding: 0 var(--footer-px) 20px;
+  box-sizing: border-box;
+}
+
+.footer-bar-inner {
+  max-width: var(--layout-frame-max);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.footer-bar-brand.ui-logo .ui-logo__mark {
+  width: 64px;
+  height: 70px;
+  object-fit: contain;
+  display: block;
+}
+
+.footer-bar-brand.ui-logo .ui-logo__wordmark {
+  width: 65px;
+  height: 32px;
+  display: block;
+}
+
+.footer-bar-nav {
+  width: 100%;
+  background: var(--color-footer);
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.footer-bar-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+.footer-bar-nav-list li {
+  flex: 0 0 auto;
+  height: 30px;
+}
+
+/* Footer nav (menu=1 / menu=4) */
+.footer-bar-nav-list .footer-bar-nav-link.ui-nav-menu-link {
+  justify-content: center;
+  white-space: nowrap;
+}
+
+/* Nav aligns to header height (70+50) */
+.footer-bar-legal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: 0;
+  padding-top: 0;
+  min-height: 46px;
+  box-sizing: border-box;
+}
+
+.footer-bar-copyright {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: var(--font-weight-regular);
+  line-height: 1.6;
+  color: var(--color-text);
+  text-align: center;
+}
+
+.footer-bar-privacy {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: var(--font-weight-regular);
+  line-height: 1.6;
+  color: var(--color-text);
+  text-decoration: none;
+  text-align: center;
+}
+
+.footer-bar-privacy:hover,
+.footer-bar-privacy:focus-visible {
+  color: var(--color-accent-hover);
+}
+
+/* Narrow: shorter map + bottom bar */
+@media (max-width: 651px) {
+  .footer-map-frame {
+    height: 222px;
+    min-height: 222px;
+  }
+
+  .footer-bar-nav-item--tablet-hide {
+    display: none;
+  }
+
+  .footer-bar-nav-list {
+    justify-content: center;
+  }
+
+  .footer-bar-nav-list .footer-bar-nav-link.ui-nav-menu-link {
+    padding: 0 6px;
+    font-size: 12px;
+  }
+
+  .footer-bar-copyright,
+  .footer-bar-privacy {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 394px) {
+  .footer-main {
+    border-radius: var(--radius-section-mobile) var(--radius-section-mobile) 0 0;
+  }
+}

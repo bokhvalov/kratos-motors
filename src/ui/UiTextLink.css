@@ -1,0 +1,55 @@
+/* Text link + arrow */
+
+.ui-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  line-height: 24px;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.15s ease, opacity 0.15s ease;
+}
+
+.ui-text-link[data-figma-variant='navigation=1'] {
+  color: #ffffff;
+}
+
+.ui-text-link[data-figma-variant='navigation=1']:visited {
+  color: #ffffff;
+}
+
+.ui-text-link[data-figma-variant='navigation=1']:hover,
+.ui-text-link[data-figma-variant='navigation=1']:focus-visible {
+  color: var(--color-maps-link);
+}
+
+.ui-text-link[data-figma-variant='navigation=2'] {
+  color: var(--color-accent);
+}
+
+.ui-text-link[data-figma-variant='navigation=2']:hover,
+.ui-text-link[data-figma-variant='navigation=2']:focus-visible {
+  color: var(--color-accent-hover);
+}
+
+.ui-text-link:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.ui-text-link__arrow {
+  display: inline-flex;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.ui-text-link__arrow svg {
+  display: block;
+}

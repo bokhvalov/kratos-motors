@@ -1,0 +1,22 @@
+/* Language row (~116×40 on light panel) */
+
+.ui-language-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 40px;
+  padding: 0 16px;
+  box-sizing: border-box;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  line-height: normal;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.ui-language-row[data-figma-variant='languages=EN hover'],
+.ui-language-row[data-figma-variant='languages=PL hover'],
+.ui-language-row[data-figma-variant='languages=RU hover'] {
+  color: var(--color-accent);
+}

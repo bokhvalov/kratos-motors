@@ -1,0 +1,384 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About us",
+    "sportsCarBuilds": "Sports car builds",
+    "portfolio": "Portfolio",
+    "privacy": "Privacy policy",
+    "brands": {
+      "audi": "Audi",
+      "bmw": "BMW",
+      "mercedes": "Mercedes",
+      "porsche": "Porsche",
+      "volkswagen": "Volkswagen",
+      "ford": "Ford"
+    }
+  },
+  "a11y": {
+    "skipToContent": "Skip to content",
+    "mainNav": "Main navigation",
+    "footerNav": "Footer navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "close": "Close"
+  },
+  "header": {
+    "chooseLanguage": "Choose language",
+    "languageListLabel": "Site language",
+    "cta": "Book a visit",
+    "phone": "+48 516 520 380",
+    "topBarLabel": "Contact and social media",
+    "socialTelegram": "Kratos Motors on Telegram",
+    "socialInstagram": "Kratos Motors on Instagram",
+    "socialWhatsapp": "Message us on WhatsApp",
+    "address": "Poland, Przedświt 10, Wrocław",
+    "phoneLinkLabel": "Call Kratos Motors"
+  },
+  "footer": {
+    "addressLabel": "Service address:",
+    "phoneLabel": "Phone number:",
+    "address": "Poland, Przedświt 10, Wrocław",
+    "phone": "+48 516 520 380",
+    "hours": "Opening hours:",
+    "hoursValue": "Mon–Fri: 09:00–17:00",
+    "hoursWeekend": "Sat–Sun: Closed",
+    "route": "Get directions",
+    "socialHeading": "Social media and messengers:",
+    "mapIframeTitle": "Map — Kratos Motors location",
+    "mapCardAria": "Address on map",
+    "mapCardTitle": "Przedświt 10",
+    "mapCardLine1": "Przedświt 10, 54-618",
+    "mapCardLine2": "Wrocław, Poland",
+    "mapEnlarge": "View larger map",
+    "mapDirections": "Directions",
+    "logoAria": "Kratos Motors — home",
+    "privacyLink": "Privacy policy",
+    "copyrightLine": "Kratos motors © {{year}}"
+  },
+  "home": {
+    "title": "KRATOS MOTORS",
+    "serwisPremium": "premium service",
+    "subtitle": "Car service and tuning | Wrocław",
+    "metaTitle": "Kratos Motors — Car service and tuning | Wrocław",
+    "metaDescription": "Kratos Motors in Wrocław — service, diagnostics and tuning. Audi, BMW, Mercedes, Porsche, Volkswagen, Ford. Book a visit.",
+    "heroDescription": "Premium alternative to ASO. Faster, more transparent, with jeweller's precision. We provide expert care for every detail, ensuring reliability and your full comfort.",
+    "servicesHeading": "Services",
+    "portfolioHeading": "Portfolio",
+    "tz": {
+      "mechanika": "MECHANICS & GEARBOXES",
+      "podwozie": "CHASSIS",
+      "tuning": "TUNING",
+      "kola": "WHEELS"
+    },
+    "ctaStripText": "We offer precise diagnostics, advanced tuning and service that set new standards.",
+    "aboutHeading": "About the project",
+    "aboutBrand": "Kratos Motors",
+    "aboutP1": "Kratos Motors is where professionalism meets trust. We specialise in advanced mechanics, tuning and premium car service, offering a reliable alternative to authorised dealers.",
+    "aboutP2": "We work in full transparency, giving you confidence that your car is always in safe hands.",
+    "whyTrustHeading": "Why they trust",
+    "whyTrustWord": "us",
+    "whyTrustSubtitle": "We focus on full transparency and the highest quality of care for your car",
+    "whyTrust01": "ASO standards at a fair price without high dealer markups",
+    "whyTrust02": "Transparent costs with no hidden fees before repair",
+    "whyTrust03": "Precise diagnostics and quick identification of every fault",
+    "whyTrust04": "Quality guarantee and fitting of proven spare parts",
+    "formHeading": "Leave a request",
+    "formHeadingMuted": "and we will contact you",
+    "formNamePlaceholder": "Your name",
+    "formPhonePlaceholder": "Phone number",
+    "formVinPlaceholder": "VIN number",
+    "formServicePlaceholder": "Service",
+    "formServicesList": [
+      "Engine diagnostics",
+      "Oil change",
+      "Filter replacement",
+      "Gearbox",
+      "Chassis / suspension",
+      "Exhaust system",
+      "Brake system",
+      "Single wishbone replacement",
+      "Control arm bushing replacement",
+      "Cabin filter replacement"
+    ],
+    "formCta": "Get priority consultation",
+    "realizationsHeading": "Our Projects",
+    "realizationEnlarge": "Enlarge image",
+    "realizationLightboxLabel": "Enlarged project photo",
+    "finalCtaText": "We offer precise diagnostics, advanced tuning and service that set new standards."
+  },
+  "breadcrumb": {
+    "home": "Home"
+  },
+  "pages": {
+    "about": {
+      "title": "About us",
+      "metaTitle": "Kratos Motors — About us | Wrocław",
+      "metaDescription": "Kratos Motors — car workshop in Wrocław. Service, diagnostics and premium tuning. Experienced team, Audi, BMW, Mercedes, Porsche and more."
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "metaTitle": "Kratos Motors — Portfolio | Wrocław",
+      "metaDescription": "Kratos Motors portfolio in Wrocław — completed service projects, tuning and premium car repairs.",
+      "intro": "Completed projects and repairs in our workshop.",
+      "showMore": "Show more",
+      "showLess": "Show less"
+    },
+    "services": {
+      "title": "Services",
+      "metaTitle": "Kratos Motors — Services | Wrocław",
+      "metaDescription": "Technical service, major repairs and additional services at Kratos Motors in Wrocław — diagnostics, oils, gearbox, chassis, exhaust, brakes and more.",
+      "details": "Details",
+      "ctaBody": "We offer precise diagnostics, advanced tuning and service that sets new standards.",
+      "sections": {
+        "technical": "Technical service / Diagnostics",
+        "main": "Major repairs",
+        "additional": "Additional services"
+      },
+      "items": {
+        "engineDiagnostics": "Engine diagnostics",
+        "oilChange": "Oil change",
+        "filterChange": "Filter replacement",
+        "oilBmw": "BMW oil change",
+        "oilMercedes": "Mercedes-Benz oil change",
+        "oilPorsche": "Porsche oil change",
+        "gearbox": "Gearbox",
+        "chassis": "Chassis",
+        "exhaust": "Exhaust system",
+        "brakes": "Brake system",
+        "shocks": "Shock absorber replacement",
+        "controlArm": "Control arm replacement",
+        "bushing": "Control arm bushing replacement",
+        "cabinFilter": "Cabin filter replacement"
+      }
+    },
+    "sportsCarBuilds": {
+      "title": "Sports car builds",
+      "metaTitle": "Kratos Motors — Sports car builds | Wrocław",
+      "metaDescription": "Sports car builds and drift preparation — Kratos Motors Wrocław. Engine swaps, roll cages, suspension, ECU tuning.",
+      "heroTitleDesktop": "We build beasts for the track and the street.",
+      "heroLeadDesktop": "Full drift prep: from a bare shell to the podium",
+      "heroTitleTabletLine1": "Kratos Motors",
+      "heroTitleTabletLine2": "premium service",
+      "heroLeadTablet": "A premium alternative to the main dealer network. Faster, clearer, and with jeweller’s precision. We provide expert care for every detail, ensuring reliability and your complete comfort.",
+      "sectionCoRobimy": "What we do",
+      "coRobimyItems": [
+        "Engine swaps",
+        "Roll cage fabrication",
+        "Suspension and steering modifications",
+        "Body lightening",
+        "Electrics and ECU tuning"
+      ],
+      "sectionDrift": "Drift modifications",
+      "driftBody": "Drift is not just a sport — it’s engineering art. We know how to make a car slide predictably, stay reliable on the course, and shift with precision. We deliver projects for every budget: from street-legal builds to professional drift cars in PRO specification.",
+      "galleryAriaLabel": "Project gallery",
+      "galleryThumbAlt": "Thumbnail {{n}}",
+      "galleryPrev": "Previous image",
+      "galleryNext": "Next image",
+      "galleryDots": "Gallery indicators",
+      "galleryGoTo": "Go to image {{n}}",
+      "ctaAria": "Book a visit"
+    },
+    "brands": {
+      "metaTitle": "Kratos Motors — {{brand}} Service | Wroclaw",
+      "metaDescription": "{{brand}} service and tuning in Wroclaw. Diagnostics, repairs, and premium care from Kratos Motors.",
+      "heroTitle": "Engineering precision for your {{brand}}",
+      "heroLead": "Premium-level support for sports and luxury cars. Race-track experience brought to your garage.",
+      "processTitle": "How we work",
+      "processCards": [
+        {
+          "title": "Initial consultation",
+          "body": "We discuss your request and define your key expectations."
+        },
+        {
+          "title": "Diagnostics and inspection",
+          "body": "Accurate fault identification and technical condition assessment."
+        },
+        {
+          "title": "Scope confirmation",
+          "body": "Approval of the work plan and expected service costs."
+        },
+        {
+          "title": "Repair execution",
+          "body": "Professional execution of approved work by our specialists."
+        },
+        {
+          "title": "Final quality control",
+          "body": "Detailed verification before handing the vehicle back."
+        }
+      ],
+      "servicesTitle": "Services",
+      "servicesRows": {
+        "technical": [
+          "Full system diagnostics (OEM)",
+          "Oil service according to factory standards",
+          "Intake and filtration system service"
+        ],
+        "main": [
+          "Transmission and drivetrain repairs",
+          "Chassis and braking system service",
+          "Exhaust system repair and modification"
+        ],
+        "additional": [
+          "Performance component installation",
+          "Electronic tuning and coding",
+          "Pre-purchase inspections and seasonal service"
+        ]
+      },
+      "facts": {
+        "audi": {
+          "title": "Eurotour on a single tank",
+          "body": "The production Audi A6 TDI ultra set a world economy record by driving through 14 European countries on a single tank of fuel. The car covered 1,865 km without refueling, from the Netherlands to Hungary."
+        },
+        "bmw": {
+          "title": "A record unbeaten for 30 years",
+          "body": "The BMW S70/2 engine in the McLaren F1 is the fastest naturally aspirated production engine in the world. Its engine bay was lined with pure gold, and 386 km/h remains out of reach for rivals without forced induction."
+        },
+        "mercedes": {
+          "title": "160,000 km flat out",
+          "body": "In 2005, three Mercedes-Benz E 320 CDI cars set a world record by covering 160,000 km in one month at an average speed of 224 km/h. This round-the-clock marathon on a Texas track officially proved the phenomenal durability of BlueTEC diesel engines."
+        },
+        "porsche": {
+          "title": "The undisputed king of the \"Green Hell\"",
+          "body": "In 2018, the Porsche 919 Hybrid Evo shattered the Nürburgring’s 35-year-old lap record. Driver Timo Bernhard completed the 20-kilometer Nordschleife in an unimaginable 5 minutes and 19 seconds. Average speed was 233 km/h — faster than many helicopters."
+        },
+        "volkswagen": {
+          "title": "Electric at the summit",
+          "body": "The electric Volkswagen ID.4 GTX set a world record by reaching the summit of an Andean volcano at 5,816 m above sea level. In thin air where combustion engines lose power, the electric drivetrain kept full performance, proving its edge in extreme mountain conditions."
+        },
+        "ford": {
+          "title": "160 million km hands-free",
+          "body": "Ford’s BlueCruise hands-free highway driving system has passed a record 160 million kilometers on motorways. The technology lets drivers travel safely without touching the wheel, reinforcing Ford’s role as a leader in mass-market autonomous driving tech."
+        }
+      }
+    },
+    "privacy": {
+      "title": "Privacy policy",
+      "metaTitle": "Kratos Motors — Privacy policy",
+      "metaDescription": "Kratos Motors privacy policy: data controller, scope and purposes of processing, cookies, and your rights under the GDPR.",
+      "s1": {
+        "heading": "1. Company information",
+        "lines": [
+          { "label": "Data controller:", "value": "Kratos Motors" },
+          { "label": "Tax ID (NIP):", "value": "8943235011" },
+          { "label": "Address:", "value": "Przedświt 10, Wrocław, Poland" },
+          { "label": "Email:", "value": "nizaruama@gmail.com" }
+        ]
+      },
+      "s2": {
+        "heading": "2. Categories of personal data collected",
+        "intro": "The controller may process:",
+        "items": [
+          "First and last name",
+          "Email address",
+          "Phone number",
+          "IP address",
+          "Technical data (browser type, operating system)",
+          "Cookies"
+        ]
+      },
+      "s3": {
+        "heading": "3. Legal basis for processing",
+        "intro": "Data are processed in accordance with Article 6(1) GDPR:",
+        "items": [
+          "On the basis of the user’s consent",
+          "For the performance of a contract",
+          "To comply with legal obligations",
+          "For the purposes of the controller’s legitimate interests"
+        ]
+      },
+      "s4": {
+        "heading": "4. Purposes of processing",
+        "items": [
+          "Contacting users",
+          "Providing services",
+          "Improving the website",
+          "Statistical and marketing purposes"
+        ]
+      },
+      "s5": {
+        "heading": "5. Recipients of data",
+        "body": "Data may be shared with hosting and IT service providers solely to operate the website."
+      },
+      "s6": {
+        "heading": "6. Retention period",
+        "body": "Data are kept until consent is withdrawn or for as long as required by law."
+      },
+      "s7": {
+        "heading": "7. Your rights",
+        "intro": "You have the right to:",
+        "items": [
+          "Access your data",
+          "Rectify your data",
+          "Erase your data",
+          "Restrict processing",
+          "Data portability",
+          "Withdraw consent"
+        ]
+      },
+      "s8": {
+        "heading": "8. Complaint",
+        "body": "You have the right to lodge a complaint with the President of the Polish Personal Data Protection Office (UODO)."
+      },
+      "s9": {
+        "heading": "9. Cookies",
+        "body": "The website uses cookies for technical and statistical purposes."
+      },
+      "s10": {
+        "heading": "10. Data security",
+        "body": "The controller applies technical and organisational measures to protect personal data."
+      },
+      "s11": {
+        "heading": "11. Changes",
+        "body": "This policy may be updated."
+      },
+      "footerNote": "By continuing to use this site, you consent to the processing of your personal data by Kratos Motors, NIP: 8943235011, ul. Przedświt 10, Wrocław, for the purpose of handling enquiries sent via the contact form, in accordance with the GDPR."
+    },
+    "404": {
+      "title": "Page not found",
+      "exclaim": "Wrrr!",
+      "lead": "You took that corner a little too fast!",
+      "body": "The page you’re looking for spun off the track.",
+      "cta": "Back to home",
+      "metaTitle": "404 — Page not found | Kratos Motors",
+      "metaDescription": "The page you requested does not exist. Return to the Kratos Motors home page in Wrocław."
+    }
+  },
+  "form": {
+    "title": "Book a visit",
+    "customerInfoTitle": "Customer information",
+    "firstName": "First name",
+    "lastName": "Last name (optional)",
+    "phoneNumber": "Phone number",
+    "emailShort": "Email",
+    "next": "Next",
+    "phoneDigitsPlaceholder": "123 456 789",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "submit": "Send",
+    "required": "This field is required",
+    "invalidEmail": "Enter a valid email address",
+    "invalidPhone": "Enter a valid phone number",
+    "invalidYear": "Enter a valid year (4 digits)",
+    "bookingConsent": "By clicking \"Next\", you confirm that you have read the <privacyLink>information on the processing of personal data</privacyLink> by Kratos Motors. We will use the data you provide solely to contact you and handle your service request.",
+    "bookingCarTitle": "Vehicle information",
+    "bookingCarMakeModel": "Car make and model",
+    "bookingCarEngine": "Engine type (optional)",
+    "bookingCarYear": "Year of manufacture (optional)",
+    "bookingCarFault": "Fault description",
+    "bookingCarFaultPlaceholder": "What is happening with the car?",
+    "bookingCarExtra": "Additional information (optional)",
+    "bookingCarExtraPlaceholder": "Additional information (optional)",
+    "bookingDetailsTitle": "Request details",
+    "bookingServiceLabel": "Service",
+    "bookingBack": "Back",
+    "bookingSend": "Send request",
+    "bookingSuccessTitle": "Thank you!",
+    "bookingSuccessHeadline": "Form submitted!",
+    "bookingSuccessBody": "Thank you for your submission. Our team will contact you soon.",
+    "bookingClose": "Close",
+    "bookingBackToHome": "Back to home page"
+  }
+}

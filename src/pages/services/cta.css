@@ -1,0 +1,53 @@
+/* Tablet/mobile CTA (hidden on desktop) */
+.services-page__cta {
+  margin-top: var(--services-title-gap);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+
+.services-page__cta-figure {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  max-width: 715px;
+  align-self: center;
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 383 / 263;
+}
+
+.services-page__cta-figure img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.services-page__cta-text {
+  margin: 0;
+  max-width: 36rem;
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.services-page .services-page__cta-btn.ui-btn[data-figma-variant='button 1=1'] {
+  width: 246px;
+  max-width: 100%;
+  height: var(--services-primary-btn-h);
+  min-height: var(--services-primary-btn-h);
+  box-sizing: border-box;
+}
+
+@media (min-width: 1201px) {
+  .services-page__cta {
+    display: none;
+  }
+}

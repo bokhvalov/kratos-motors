@@ -1,0 +1,20 @@
+/* Logo */
+
+.ui-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  color: inherit;
+  flex-shrink: 0;
+}
+
+.ui-logo[data-figma-variant='Property 1=logo'] {
+  width: 147px;
+  height: 70px;
+}
+
+.ui-logo[data-figma-variant='Property 1=logo mobile'] {
+  width: 136px;
+  height: 60px;
+}

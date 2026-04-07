@@ -1,0 +1,32 @@
+.services-page {
+  --services-card-h: 302px;
+  --services-card-h-mobile: 298px;
+  --services-card-btn: #f30603;
+  --services-gap: 24px;
+  --services-title-gap: 56px;
+  /* Card CTA height tracks UiButton 1=1 */
+  --services-primary-btn-h: var(--btn-height);
+  overflow-x: clip;
+}
+
+@media (max-width: 1200px) {
+  .services-page {
+    --services-primary-btn-h: var(--btn-height-tablet);
+  }
+}
+
+.services-page__stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: var(--space-md);
+}
+
+.services-page__section {
+  margin-top: var(--services-title-gap);
+}
+
+.services-page__section:first-child {
+  margin-top: 0;
+}
+

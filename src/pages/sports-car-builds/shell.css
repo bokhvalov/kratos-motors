@@ -1,0 +1,41 @@
+.sports-builds {
+  --sb-bg: #090a0e;
+  --sb-panel: #14161b;
+  --sb-radius-hero: 30px;
+  width: 100%;
+  background: var(--sb-bg);
+  color: #fff;
+}
+
+/* Hero crumb row is absolute — pad once with --section-px */
+.sports-builds-hero__crumb-row .breadcrumb {
+  margin-bottom: 0;
+  padding-left: var(--section-px);
+}
+
+/* Mobile crumb: parent already has horizontal padding */
+.sports-builds__crumb-mobile .breadcrumb {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.sports-builds__crumb-mobile.page-container {
+  display: none;
+  padding-bottom: 0;
+  background: var(--sb-bg);
+}
+
+@media (max-width: 394px) {
+  .sports-builds__crumb-mobile.page-container {
+    display: block;
+    padding-right: 0;
+  }
+
+  .sports-builds__crumb-mobile .breadcrumb ol > li:first-child a {
+    padding-right: 0;
+  }
+
+  .sports-builds__crumb-mobile .breadcrumb__current {
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,7 @@
+/* Shared page layout + route-specific blocks (@import order matters). */
+@import './page/page-shell.css';
+@import './page/about-page.css';
+@import './page/portfolio-page.css';
+@import './page/brand-page.css';
+@import './page/privacy-page.css';
+@import './page/not-found-page.css';

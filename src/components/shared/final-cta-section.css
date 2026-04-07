@@ -1,0 +1,36 @@
+/* Final CTA — Home, About */
+.final-cta-section {
+  padding: 0 0 60px;
+}
+
+.final-cta-section__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.final-cta-section__text {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  line-height: 1.6;
+  color: var(--color-text);
+  text-align: center;
+  margin: 0;
+  max-width: var(--layout-inner-max);
+}
+
+/* Desktop: cap width (UiButton 1=7 defaults to 100%) */
+@media (min-width: 746px) {
+  .final-cta-section__inner > .ui-btn {
+    max-width: 198px;
+  }
+}
+
+@media (max-width: 744px) {
+  .final-cta-section {
+    padding: 40px 0;
+  }
+}

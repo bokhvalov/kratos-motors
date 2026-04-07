@@ -1,0 +1,183 @@
+/* Realizations — Home, About + lightbox */
+.realizations-section {
+  padding: 60px 0;
+}
+
+.realizations-section__heading {
+  font-family: var(--font-body);
+  font-size: 48px;
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text);
+  text-transform: uppercase;
+  margin: 0 0 37px;
+  padding: 0;
+}
+
+.realizations-section__strip {
+  width: 100%;
+}
+
+.realizations-section__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+.realizations-section__card {
+  position: relative;
+  border: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 15px;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  aspect-ratio: 1;
+  height: auto;
+  text-decoration: none;
+  background: none;
+  cursor: zoom-in;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+}
+
+.realizations-section__card:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  z-index: 1;
+}
+
+.realizations-section__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* Horizontal scroll like home tz strip from ≤1110px */
+@media (max-width: 1110px) {
+  .realizations-section__strip {
+    display: block;
+    width: calc(100% + 2 * var(--section-px));
+    margin-inline: calc(-1 * var(--section-px));
+    padding-inline: var(--section-px);
+    box-sizing: border-box;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  .realizations-section__grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 24px;
+    width: max-content;
+    max-width: none;
+    margin: 0;
+  }
+
+  .realizations-section__card {
+    flex: 0 0 auto;
+    width: clamp(200px, 28vw, 280px);
+    aspect-ratio: 1;
+    height: auto;
+  }
+}
+
+@media (max-width: 744px) {
+  .realizations-section {
+    padding: 40px 0;
+  }
+
+  .realizations-section__heading {
+    font-size: 28px;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 394px) {
+  .realizations-section__heading {
+    font-size: 22px;
+  }
+
+  .realizations-section__grid {
+    gap: 16px;
+  }
+
+  .realizations-section__card {
+    width: 299px;
+  }
+}
+
+/* Lightbox zoom (no navigation to /portfolio) */
+.realizations-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 950;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: max(16px, var(--space-lg));
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.88);
+  cursor: zoom-out;
+}
+
+.realizations-lightbox__close {
+  position: absolute;
+  top: max(16px, var(--space-lg));
+  right: max(16px, var(--space-lg));
+  z-index: 2;
+  width: 44px;
+  height: 44px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 22px;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.realizations-lightbox__close img {
+  display: block;
+  width: 44px;
+  height: 44px;
+  pointer-events: none;
+}
+
+.realizations-lightbox__close:hover {
+  filter: brightness(1.06);
+}
+
+.realizations-lightbox__close:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+}
+
+.realizations-lightbox__img {
+  position: relative;
+  z-index: 1;
+  max-width: min(92vw, 1200px);
+  max-height: min(85vh, 900px);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  cursor: default;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.45);
+}

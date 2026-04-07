@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700&family=Montserrat:wght@400;500;600&family=Roboto:wght@400;500&family=Inter:wght@400;500;600&display=swap');
+
+@import './styles/variables.css';
+@import './styles/utilities.css';
+@import './ui/ui-kit.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  /* Anchor scroll offset under fixed header */
+  scroll-padding-top: var(--site-header-height);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.5;
+  color: var(--color-text);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Avoid hyphenation / awkward breaks */
+  hyphens: none;
+  -webkit-hyphens: none;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Skip link — first focusable, hidden until focus */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  z-index: 9999;
+  padding: var(--space-md) var(--space-lg);
+  background: var(--color-accent);
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+}
+
+.skip-link:focus {
+  left: 0;
+  top: var(--site-header-height);
+}
+
+/* Focus visible — do not remove (a11y) */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.main-content {
+  flex: 1;
+  padding-top: var(--site-header-height);
+  width: 100%;
+  max-width: none;
+}
+
+.layout-content,
+.layout-frame-padded {
+  width: 100%;
+  max-width: var(--layout-frame-max);
+  margin-inline: auto;
+  padding-inline: var(--section-px);
+  box-sizing: border-box;
+}
+
+.layout-inner-max {
+  width: 100%;
+  max-width: var(--layout-inner-max);
+  margin-inline: auto;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+/*
+ * iOS Safari zooms focused inputs when computed font-size is below 16px; that zoom can
+ * remain after blur. Use at least 16px on narrow viewports for real text fields (better
+ * than viewport meta tricks that block user zoom).
+ */
+@media screen and (max-width: 1024px) {
+  input.ui-input[data-figma-variant='form=1'],
+  input.ui-input[data-figma-variant='form=2'],
+  input.ui-input[data-figma-variant='Property 1=1'],
+  input.ui-input[data-figma-variant='Property 1=2'],
+  textarea.ui-input {
+    font-size: 16px !important;
+  }
+
+  .modal-car-form__textarea,
+  .modal-field__textarea {
+    font-size: 16px !important;
+  }
+}
