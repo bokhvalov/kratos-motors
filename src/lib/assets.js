@@ -10,6 +10,17 @@ export function publicAssetUrl(path) {
 const RASTER_EXTENSION_RE = /\.(?:avif|webp|jpe?g|png)$/i
 const GENERATED_WEBP_VARIANT_RE = /@([123])x\.webp$/i
 
+function stripBaseUrlPrefix(normalizedPath) {
+  const base = String(import.meta.env.BASE_URL || '/')
+    .replace(/^\/+/, '')
+    .replace(/\/+$/, '')
+
+  if (!base) return normalizedPath
+  if (normalizedPath === base) return ''
+  if (normalizedPath.startsWith(`${base}/`)) return normalizedPath.slice(base.length + 1)
+  return normalizedPath
+}
+
 function encodeAssetFilename(filename) {
   return encodeURIComponent(filename).replace(/%40/g, '@')
 }
@@ -51,7 +62,7 @@ export function getAssetSrcSet(folder, filename) {
 }
 
 export function getDirectAssetUrl(path, scale = 1) {
-  const normalizedPath = String(path || '').replace(/^\/+/, '')
+  const normalizedPath = stripBaseUrlPrefix(String(path || '').replace(/^\/+/, ''))
   const parts = normalizedPath.split('/').filter(Boolean)
   const filename = parts.pop() || ''
   const safeScale = scale >= 3 ? 3 : scale <= 1 ? 1 : 2
@@ -71,7 +82,7 @@ export function getDirectAssetUrl(path, scale = 1) {
 }
 
 export function getDirectAssetSrcSet(path) {
-  const normalizedPath = String(path || '').replace(/^\/+/, '')
+  const normalizedPath = stripBaseUrlPrefix(String(path || '').replace(/^\/+/, ''))
   const parts = normalizedPath.split('/').filter(Boolean)
   const filename = parts.pop() || ''
 
