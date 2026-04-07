@@ -860,6 +860,7 @@
   background: #1a1a1a;
   overflow: hidden;
   contain: paint;
+  --modal-media-pos-x: 23%;
 }
 
 .modal-dialog__media-img {
@@ -867,6 +868,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: var(--modal-media-pos-x) center;
   backface-visibility: hidden;
 }
 

@@ -261,7 +261,11 @@
     "404": {
       "title": "Strona nie znaleziona",
       "metaTitle": "404 — Strona nie znaleziona | Kratos Motors",
-      "metaDescription": "Żądana strona nie istnieje. Wróć na stronę główną Kratos Motors we Wrocławiu."
+      "metaDescription": "Żądana strona nie istnieje. Wróć na stronę główną Kratos Motors we Wrocławiu.",
+      "exclaim": "Wrrr!",
+      "lead": "Za szybko wszedłeś w zakręt!",
+      "body": "Strona, której szukasz, wypadła z toru.",
+      "cta": "Wróć na główną"
     }
   },
   "form": {

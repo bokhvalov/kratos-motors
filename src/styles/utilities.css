@@ -11,3 +11,24 @@
   white-space: nowrap;
   border: 0;
 }
+
+/* Liquid glass helper (used by modals/cards) */
+.glass-panel {
+  background: linear-gradient(180deg, var(--glass-surface), var(--glass-surface-2));
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  box-shadow: var(--glass-shadow);
+}
+
+.glass-panel::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(1200px 420px at 20% -10%, rgba(255, 255, 255, 0.65), transparent 55%),
+    radial-gradient(900px 360px at 110% 20%, rgba(255, 255, 255, 0.35), transparent 50%);
+  mix-blend-mode: screen;
+  opacity: 0.65;
+}

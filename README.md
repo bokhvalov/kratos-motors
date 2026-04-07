@@ -2,7 +2,7 @@
 
 Production-ready marketing website for an automotive service & tuning workshop. Built as a single-page app with multi-language support, SEO meta handling, and responsive, content-heavy pages (services, brand landing pages, portfolio, and builds gallery).
 
-- **Live demo**: _add link_
+- **Live demo**: https://bokhvalov.github.io/kratos-motors/404
 - **Design**: https://www.figma.com/design/TG5ajCDdNzndaumQw6WIMo/KRATOS-MOTORS?node-id=0-1&t=CFdMcjSPZQiohxLo-1
 
 ## Highlights

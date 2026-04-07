@@ -14,6 +14,14 @@
   --color-text-muted: #686767;
   --color-border: #1f1f1f;
 
+  /* Liquid glass */
+  --glass-blur: 18px;
+  --glass-border: rgba(255, 255, 255, 0.16);
+  --glass-shadow: 0 24px 64px rgba(0, 0, 0, 0.55);
+  --glass-surface: rgba(255, 255, 255, 0.78);
+  --glass-surface-2: rgba(255, 255, 255, 0.62);
+  --glass-text: #0b0b0d;
+
   /* Typography */
   --font-heading: "Big Shoulders Display", sans-serif;
   --font-body: "Montserrat", sans-serif;
