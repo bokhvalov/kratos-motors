@@ -256,7 +256,83 @@
       "title": "Polityka prywatności",
       "metaTitle": "Kratos Motors — Polityka prywatności",
       "metaDescription": "Polityka prywatności Kratos Motors — zasady przetwarzania danych osobowych w serwisie i przy zgłoszeniach.",
-      "body": "Treść polityki prywatności — do uzupełnienia przez administratora danych."
+      "s1": {
+        "heading": "1. Informacje o firmie",
+        "lines": [
+          { "label": "Administrator danych:", "value": "Kratos Motors" },
+          { "label": "NIP:", "value": "8942853201" },
+          { "label": "Adres:", "value": "Przedświt 10, Wrocław" },
+          { "label": "Email:", "value": "kratosmotorswro@gmail.com" }
+        ]
+      },
+      "s2": {
+        "heading": "2. Zakres zbieranych danych",
+        "intro": "Administrator może przetwarzać:",
+        "items": [
+          "Imię i nazwisko",
+          "Adres e-mail",
+          "Numer telefonu",
+          "Adres",
+          "Dane techniczne (np. przy zgłoszeniach serwisowych)",
+          "Pliki cookies"
+        ]
+      },
+      "s3": {
+        "heading": "3. Podstawa prawna przetwarzania danych",
+        "intro": "Dane są przetwarzane na podstawie art. 6 ust. 1 RODO:",
+        "items": [
+          "Na podstawie zgody użytkownika",
+          "W celu realizacji umowy",
+          "W celu spełnienia obowiązków prawnych",
+          "W ramach prawnie uzasadnionego interesu administratora"
+        ]
+      },
+      "s4": {
+        "heading": "4. Cele przetwarzania danych",
+        "items": [
+          "Kontakt z użytkownikami",
+          "Realizacja usług",
+          "Poprawa działania strony",
+          "Cele statystyczne i marketingowe"
+        ]
+      },
+      "s5": {
+        "heading": "5. Odbiorcy danych",
+        "body": "Dane mogą być przekazywane firmom hostingowym i IT wyłącznie w celu obsługi strony."
+      },
+      "s6": {
+        "heading": "6. Okres przechowywania danych",
+        "body": "Dane są przechowywane do momentu cofnięcia zgody lub zgodnie z przepisami prawa."
+      },
+      "s7": {
+        "heading": "7. Prawa użytkownika",
+        "intro": "Użytkownik ma prawo do:",
+        "items": [
+          "Dostępu do danych",
+          "Ich poprawiania",
+          "Usunięcia danych",
+          "Ograniczenia przetwarzania",
+          "Przenoszenia danych",
+          "Cofnięcia zgody"
+        ]
+      },
+      "s8": {
+        "heading": "8. Skarga",
+        "body": "Użytkownik ma prawo złożyć skargę do Prezesa UODO."
+      },
+      "s9": {
+        "heading": "9. Cookies",
+        "body": "Strona wykorzystuje cookies w celach technicznych i statystycznych."
+      },
+      "s10": {
+        "heading": "10. Bezpieczeństwo danych",
+        "body": "Administrator stosuje środki techniczne i organizacyjne w celu ochrony danych."
+      },
+      "s11": {
+        "heading": "11. Zmiany",
+        "body": "Polityka może ulec zmianie."
+      },
+      "footerNote": "Kontaktując się, wyrażasz zgodę na przetwarzanie danych osobowych przez Kratos Motors, NIP: 8942853201, ul. Przedświt 10, Wrocław, w celu obsługi zapytania przesłanego za pomocą formularza kontaktowego, zgodnie z RODO."
     },
     "404": {
       "title": "Strona nie znaleziona",

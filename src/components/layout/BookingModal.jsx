@@ -371,7 +371,11 @@ export function BookingModal({ isOpen, onClose }) {
                   i18nKey="form.bookingConsent"
                   components={{
                     privacyLink: (
-                      <Link to="/privacy-policy" className="modal-booking-form__consent-link" />
+                      <Link
+                        to="/privacy-policy"
+                        className="modal-booking-form__consent-link"
+                        onClick={() => onClose()}
+                      />
                     ),
                   }}
                 />
